@@ -1,0 +1,58 @@
+.contact-header {
+  background-image: url(../../assets/images/rain.gif);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.contact-header-name {
+  padding-bottom: 5px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  background-image: linear-gradient(
+    -90deg,
+    transparent 0%,
+    var(--black) 20%,
+    var(--black) 50%,
+    var(--black) 80%,
+    transparent 100%
+    );
+  border-radius: 2vh;
+  border: 2px solid var(--white);
+  /* background-color: var(--secondary);
+  box-shadow: 8px 8px 16px var(--black) inset;
+  text-shadow: 8px 8px 4px var(--black); */
+  /* background: 
+    linear-gradient(to top, #eb3136, white 7px, transparent 7px),
+    linear-gradient(to right, #eb3136, white 7px, transparent 7px),
+    linear-gradient(to bottom, #eb3136, white 7px, transparent 7px),
+    linear-gradient(to left, #eb3136, white 7px, transparent 7px); */
+}
+
+.contact-header-title {
+  padding-top: 5px;
+  border-top: 2px solid var(--white);
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* | @MEDIA QUERIES | */
+@media screen and (min-width: 1000px) {
+  .contact-header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}

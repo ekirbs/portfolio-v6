@@ -1,0 +1,22 @@
+.main {
+  background: url(../../assets/images/black-space.png) no-repeat center center fixed;
+  /* background: url(../../assets/images/tree-road.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section {
+  height: 50vh;
+  width: 95vw;
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  margin: 2vh;
+  padding: 2vh;
+}

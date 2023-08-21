@@ -1,0 +1,132 @@
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  padding: 2vw;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-info-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-icon {
+  height: 5vh;
+  width: 5vh;
+  margin: 1vh 2vh 1vh 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-area {
+  margin: 1vh;
+  width: 400px;
+  display: flex;
+  text-align: center;
+}
+
+.text-area {
+  min-height: 10vh;
+}
+
+.contact-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.contact-form-content {
+  width: 400px;
+  text-align: center;
+}
+
+.error-text {
+  color: var(--error);
+}
+
+.contactButtonDiv {
+  margin: .5vh;
+  padding: 1vh 1.5vh;
+  background-color: var(--turq);
+  border-radius: 20rem;
+}
+
+.contact-button {
+  transition: transform .2s;
+  /* box-shadow: 1px 1px 2px var(--black);
+  margin: 1vh; */
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .map-col,
+  .contact-container {
+    width: 100%;
+  }
+}
+
+
+/* | @MEDIA QUERIES | */
+@media screen and (max-width: 500px) {
+  .contact-container {
+    width: 90vw;
+    margin: 2.5vw;
+  }
+
+  .contact-form {
+    width: 90vw;
+  }
+
+  .contact-form-content {
+    width: 85vw;
+  }
+
+  .contact-area {
+    width: 90%;
+  }
+}

@@ -1,0 +1,97 @@
+.diagonal-section {
+  background-image: linear-gradient(45deg, var(--black), var(--dark));
+  transform: skewY(-3deg);
+  width: 100% !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.divider-content {
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(3deg);
+  min-height: 10vh;
+  border: 2px solid var(--light);
+  background-color: var(--secondary);
+  box-shadow: 8px 8px 16px var(--black) inset;
+  text-shadow: 8px 8px 4px var(--black);
+  border-radius: 3vh;
+}
+
+.projects-header {
+  font-size: 200%;
+  color: var(--light);
+  margin: 5vh;
+  font-weight: bold;
+}
+
+.divider {
+  width: 100%;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 8vw solid var(--primary);
+  margin-top: -8vw;
+}
+
+.divider2 {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 8vw solid var(--secondary);
+  margin-top: -8vw;
+}
+
+.divider3 {
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--primary);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  margin: 0 0 -5vh 0;
+}
+
+.resume-diagonal-section {
+  background-image: linear-gradient(
+    -225deg,
+    var(--black) 15%,
+    #231557 20%,
+    #44107a 30%,
+    #ff1361 35%,
+    #fff800 45%,
+    var(--white) 60%,
+    #fff800 75%,
+    #ff1361 85%,
+    #44107a 90%,
+    #231557 100%
+  );
+  /* background-image: linear-gradient(45deg, #6303B1, #ff0099); */
+  transform: skewY(3deg);
+  width: 100% !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.resume-divider-content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(-3deg);
+  min-height: 20vh;
+}
+
+.resume-header {
+  font-size: 200%;
+  color: var(--black);
+  margin: 5vh;
+  font-weight: bold;
+}

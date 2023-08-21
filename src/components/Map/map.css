@@ -1,0 +1,39 @@
+/* | MAP STYLE | */
+.map-card {
+  margin: 5vw 10vw;
+  background: var(--white);
+  border-radius: 0 0 4vh 4vh;
+  box-shadow: 1px 1px 4px var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 50vh;
+}
+
+.map-card div {
+  width: 100% !important;
+}
+
+.mapForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapInput {
+  margin: 1vh;
+}
+
+/* | @MEDIA QUERIES | */
+@media screen and (max-width: 800px) {
+  .map-card{
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .map-card{
+    width: 90%;
+    margin: 2.5vw;
+  }
+}
