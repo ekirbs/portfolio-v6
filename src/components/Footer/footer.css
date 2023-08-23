@@ -4,9 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 2px solid var(--primary);
-  background: var(--black);
-}
+  border-top: 2px solid var(--turq);
+
+  background-image: url(../../assets/images/black-space.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
 
 .footer a {
   margin: 0;

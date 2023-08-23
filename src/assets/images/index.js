@@ -1,4 +1,4 @@
-export { default as blackSpace } from "./black-space.png";
+export { default as blackSpace } from "./black-space.jpg";
 export { default as instagramLogo } from "./instagram-logo.png";
 export { default as githubLogo } from "./github-logo.jpg";
 export { default as linkedinLogo } from "./linkedin-logo.jpg";

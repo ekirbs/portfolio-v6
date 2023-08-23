@@ -3,7 +3,7 @@ import { send } from "emailjs-com";
 import { Row, Col } from "react-bootstrap";
 import { Map } from "../";
 import { validateEmail } from "../../utils/helpers";
-import { AiFillMail, AiFillPhone } from "react-icons/ai";
+import { AiFillMail, AiFillPhone, AiFillSound } from "react-icons/ai";
 import "./contact.css";
 import "./contactButton.scss";
 import HereWeGo from "./HereWeGo.mp3";
@@ -106,13 +106,15 @@ export default function Contact() {
                       placeholder="Text Area"
                       className="contact-area text-area"
                     />
-                    <div className="contactButtonDiv">
+                    <div className="contact-button-div">
                       <button
                         type="button"
                         className="slideButton contact-button"
                         onClick={handleFormSubmit}
                       >
+                        <AiFillSound className="sound-icon-left"/>
                         Send It
+                        <AiFillSound className="sound-icon-right"/>
                       </button>
                     </div>
                     <div>

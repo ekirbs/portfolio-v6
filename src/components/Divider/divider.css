@@ -9,7 +9,10 @@
   justify-content: center;
   text-align: center;
   min-height: 14vh;
+  border-top: 2px solid var(--turq);
 }
+
+
 
 .projects-header {
   font-size: 200%;
