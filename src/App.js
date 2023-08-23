@@ -2,6 +2,7 @@ import {
   Header,
   Navbar,
   Divider,
+  WorkHeader,
   Projects,
   Techs,
   About,
@@ -20,6 +21,7 @@ export default function App() {
       <Header />
       <Navbar />
       <Divider />
+      <WorkHeader />
       <Projects />
       <Techs />
       <AboutHeader />

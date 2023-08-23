@@ -66,7 +66,7 @@ export default function Techs() {
   useEffect(() => {
     const interval = setInterval(() => {
       setLogoIndex((prevIndex) => (prevIndex + 1) % techLogos.length);
-    }, 3000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);

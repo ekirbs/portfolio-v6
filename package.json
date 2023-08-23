@@ -60,5 +60,8 @@
     "responsive design",
     "JavaScript",
     "CSS"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "*"
+  }
 }

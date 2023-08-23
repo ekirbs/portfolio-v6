@@ -23,7 +23,9 @@
   margin: 5vh;
 }
 
-.about-content {
+.about-intro,
+.about-content,
+.about-cta {
   padding: 5vh;
   width: 45%;
   color: var(--white);

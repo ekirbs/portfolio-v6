@@ -190,20 +190,20 @@
 
 .html-highlight:hover {
   transform: scale(1.1);
-  color: var(--html5);
+  color: var(--html);
 }
 
 .html-highlight:hover .tech-icon {
-  color: var(--html5);
+  color: var(--html);
 }
 
 .css-highlight:hover {
   transform: scale(1.1);
-  color: var(--css3);
+  color: var(--css);
 }
 
 .css-highlight:hover .tech-icon {
-  color: var(--css3);
+  color: var(--css);
 }
 
 .js-highlight:hover {
@@ -235,11 +235,11 @@
 
 .graph-highlight:hover {
   transform: scale(1.1);
-  color: var(--graph);
+  color: var(--graphql);
 }
 
 .graph-highlight:hover .tech-icon {
-  color: var(--graph);
+  color: var(--graphql);
 }
 
 .apollo-highlight:hover {

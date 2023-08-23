@@ -2,10 +2,10 @@ import { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import projects from "./projectsArray";
 import { SiGithub } from "react-icons/si";
 import { GrDeploy } from "react-icons/gr";
 import ArrowButton from "./arrow";
+import projects from "./projectsArray";
 import "./projects.css";
 
 export default class SimpleSlider extends Component {

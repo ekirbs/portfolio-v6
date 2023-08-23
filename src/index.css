@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* |||| INDEX STYLE |||| */
+
+/* ROOT COLOR KEY */
+:root {
+  --primary: #424242;
+  --secondary: #808080;
+  --tertiary: #FFFDD0;
+  --quatrinary: #bdbdbd;
+  --light: #dfdfdf;
+  --dark: #3B3B38;
+  --white: #ffffff;
+  --black: #000000;
+  --silver: #c0c0c0;
+  --error: rgb(228, 46, 1);
+
+  --weatherTitle: #365a7a;
+  --weatherBlue: #113555;
+  --highlight: #ffa000;
+  --turq: #69dcf3;
+
+  /* brand colors */
+  --js: #f7df1e;
+  --react: #00d8ff;
+  --vue: #42b883;
+  --handlebars: #ff7b00;
+  --node: #6cc24a;
+  --html: #e34f26;
+  --jquery: #0769ad;
+  --css: #0074d9;
+  --sass: #cd6799;
+  --bootstrap: #563d7c;
+  --bulma: #00d1b2;
+  --mysql: #00758f;
+  --sequelize: #00a5db;
+  --mongo: #589636;
+  --heroku: #6762a6;
+  --firebase: #ffca28;
+  --express: #ffffff;
+  --axios: #35495e;
+  --apollo: #311c87;
+  --insomnia: #0b163d;
+  --graphql: #e10098;
+  --github: #6F42C1;
+  
+  --json: #ffffff;
+  --npm: #cb3837;
+  --nodemon: #76d04b;
+  --materialize: #26a69a;
+  --vscode: #007acc;
+  --passport: #2c3e50;
+  --msoffice: #2d3952;
+
+  --border-radius: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* GLOBAL EFFECTS */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--turq);
 }

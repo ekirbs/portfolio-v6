@@ -1,5 +1,5 @@
-.header {
-  background-image: url(../../assets/images/black-space.png);
+.work-header {
+  background-image: url(../../assets/images/puddle-shine.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -8,30 +8,29 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--white);
-  margin-bottom: -10vh;
+  margin-top: -10vh;
 }
 
-.header-name {
+.work-header-text {
   padding-bottom: 5px;
-  border-bottom: 2px solid var(--white);
   width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.header-title {
-  padding-top: 5px;
-  border-top: 2px solid var(--white);
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2vh;
+  background-image: linear-gradient(
+    -90deg,
+    transparent 0%,
+    var(--black) 20%,
+    var(--black) 50%,
+    var(--black) 80%,
+    transparent 100%
+    );
+  border-radius: 2vh;
+  border: 2px solid var(--white);
 }
