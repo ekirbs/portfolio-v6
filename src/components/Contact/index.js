@@ -24,18 +24,44 @@ export default function Contact() {
     }
   }, [submitted]);
 
+  const SendButton = ({ onClick }) => (
+    <button
+      type="button"
+      className="slideButton contact-button"
+      onClick={handleFormSubmit}
+    >
+      <AiFillSound className="sound-icon-left" />
+      Send It
+      <AiFillSound className="sound-icon-right" />
+    </button>
+  );
+
   const handleInputChange = (e) =>
     setFormInput({ ...formInput, [e.target.name]: e.target.value });
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
+  const handleValidation = () => {
     if (!validateEmail(formInput.reply_to) || !formInput.from_name) {
       setErrorMessage(
         "Either you didn't enter a name, or the email address you entered is invalid."
       );
+      return false;
+    }
+    return true;
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // if (!validateEmail(formInput.reply_to) || !formInput.from_name) {
+    //   setErrorMessage(
+    //     "Either you didn't enter a name, or the email address you entered is invalid."
+    //   );
+    //   return;
+    // }
+
+    if (!handleValidation()) {
       return;
-    };
+    }
 
     console.log("Sending... 📨");
 
@@ -49,12 +75,12 @@ export default function Contact() {
       .then((response) => {
         alert(`Welcome to the jungle, ${formInput.from_name}!`);
         console.log("SUCCESS!", response.status, response.text);
-        setSubmit(true)
+        setSubmit(true);
         setFormInput({
-          from_name: '',
-          reply_to: '',
-          message: '',
-        })
+          from_name: "",
+          reply_to: "",
+          message: "",
+        });
       })
       .catch((err) => {
         console.log("FAILED...", err);
@@ -71,14 +97,28 @@ export default function Contact() {
           <Col>
             <div className="contact-container">
               <div className="contact-info-container">
-                <div><AiFillMail className="contact-info-icon" /><p className="contact-card-content"> erickirberger@gmail.com</p></div>
-                <div><AiFillPhone className="contact-info-icon" /><p className="contact-card-content"> 908 229 0170</p></div>
+                <div>
+                  <AiFillMail className="contact-info-icon" />
+                  <p className="contact-card-content">
+                    {" "}
+                    erickirberger@gmail.com
+                  </p>
+                </div>
+                <div>
+                  <AiFillPhone className="contact-info-icon" />
+                  <p className="contact-card-content"> 908 229 0170</p>
+                </div>
               </div>
-              {submitted ? <h2 className="contact-success-greeting">Thank you {formInput.from_name}!</h2> :          
+              {submitted ? (
+                <h2 className="contact-success-greeting">
+                  "Here We Go!" Thank you {formInput.from_name}.
+                </h2>
+              ) : (
                 <>
                   <div>
                     <p className="contact-card-content contact-form-content">
-                      Send me a message and I'll get back to you as soon as I can.
+                      Send me a message and I'll get back to you as soon as I
+                      can.
                     </p>
                   </div>
                   <form className="contact-form">
@@ -107,15 +147,16 @@ export default function Contact() {
                       className="contact-area text-area"
                     />
                     <div className="contact-button-div">
-                      <button
+                      <SendButton onClick={handleFormSubmit} />
+                      {/* <button
                         type="button"
                         className="slideButton contact-button"
                         onClick={handleFormSubmit}
                       >
-                        <AiFillSound className="sound-icon-left"/>
+                        <AiFillSound className="sound-icon-left" />
                         Send It
-                        <AiFillSound className="sound-icon-right"/>
-                      </button>
+                        <AiFillSound className="sound-icon-right" />
+                      </button> */}
                     </div>
                     <div>
                       <p className="contact-card-content contact-form-content">
@@ -136,7 +177,7 @@ export default function Contact() {
                     </div>
                   )}
                 </>
-              }
+              )}
             </div>
           </Col>
         </Row>
@@ -144,4 +185,4 @@ export default function Contact() {
       <audio ref={audioRef} src={HereWeGo}></audio>
     </>
   );
-};
+}
