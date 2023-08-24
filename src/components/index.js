@@ -5,7 +5,7 @@ export { default as Divider } from "./Divider";
 export { default as Projects } from "./Projects/indexSandbox";
 export { default as Techs } from "./Techs";
 export { default as AboutHeader } from "./AboutHeader";
-export { default as About } from "./About";
+export { default as About } from "./About/indexSandbox";
 export { default as ResumeDivider } from "./ResumeDivider";
 export { default as Resume } from "./Resume";
 export { default as ContactHeader } from "./ContactHeader";

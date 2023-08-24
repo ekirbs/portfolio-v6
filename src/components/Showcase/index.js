@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SiGithub } from "react-icons/si";
 import { GrDeploy } from "react-icons/gr";
-import ArrowButton from "./arrow";
-import projects from "./projectsArray";
 import { Row, Col } from "react-bootstrap";
-import "./projectSandbox.css";
+import ArrowButton from "./arrow";
+import showcase from "./showcaseArray";
+import "./showcase.css";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -23,16 +23,16 @@ export default class SimpleSlider extends Component {
 
     return (
       <>
-        <div id="projects" className="projects-card">
-          <Slider {...settings} className="projects-slider">
-            {projects.map(
+        <div id="showcase" className="showcase-card">
+          <Slider {...settings} className="showcase-slider">
+            {showcase.map(
               (
                 { pic, title, description, technologies, deploy, github },
                 index
               ) => (
                 <div className="showcase-card">
                   <Row className="showcase-row">
-                    <Col className="projects-info-container">
+                    <Col className="showcase-info-container">
                       <h3 className="project-title">{title}</h3>
                       <img
                         className="project-img"

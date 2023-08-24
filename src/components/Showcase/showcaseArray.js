@@ -17,7 +17,7 @@ import { SiSequelize, SiGraphql, SiApollographql, SiHandlebarsdotjs, SiExpress, 
 
 //   const projectList = [
 
-const Projects = [
+const Showcase = [
   {
     "title": "Task Sandwich",
     "pic": taskSandwich,
@@ -136,4 +136,4 @@ const Projects = [
   }
 ]
 
-export default Projects;
+export default Showcase;

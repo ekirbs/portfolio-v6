@@ -1,6 +1,7 @@
 import React from "react";
 import { profilePhoto } from "../../assets/images";
-import "./about.css";
+import { Row, Col } from "react-bootstrap";
+import "./aboutSandbox.css";
 
 export default function About() {
   return (
