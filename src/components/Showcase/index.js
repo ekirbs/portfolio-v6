@@ -30,17 +30,17 @@ export default class SimpleSlider extends Component {
                 { pic, title, description, technologies, deploy, github },
                 index
               ) => (
-                <div className="showcase-card">
+                <div className="showcase-inner-card">
                   <Row className="showcase-row">
                     <Col className="showcase-info-container">
-                      <h3 className="project-title">{title}</h3>
+                      <h3 className="showcase-title">{title}</h3>
                       <img
-                        className="project-img"
+                        className="showcase-img"
                         src={pic}
                         key={index}
                         alt={title}
                       />
-                      <p className="project-description">{description}</p>
+                      <p className="showcase-description">{description}</p>
                       <div className="showcase-buttons">
                         <a href={deploy} target="_blank" rel="noreferrer">
                           <GrDeploy className="button-icon-left" />

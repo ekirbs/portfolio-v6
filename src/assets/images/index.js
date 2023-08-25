@@ -7,8 +7,10 @@ export { default as profilePhoto } from "./profile-photo.jpg";
 export { default as puddleShineGif } from "./puddle-shine.gif";
 export { default as puddleStoresGif } from "./puddle-stores.gif";
 export { default as rainGif } from "./rain.gif";
+
 export { default as ResumeImg } from "./resume-img.png";
 export { default as ResumeDownload } from "./resume-download.pdf";
+
 export { default as ccmLogo } from "./ccm-logo.png";
 export { default as rutgersLogo } from "./rutgers-logo.png";
 export { default as bootcampLogo } from "./bootcamp-logo.png";

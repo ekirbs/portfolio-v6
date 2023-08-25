@@ -117,8 +117,7 @@ export default function Contact() {
                 <>
                   <div>
                     <p className="contact-card-content contact-form-content">
-                      Send me a message and I'll get back to you as soon as I
-                      can.
+                      Let's go grab a cup of coffee!
                     </p>
                   </div>
                   <form className="contact-form">

@@ -1,0 +1,25 @@
+.projects-navbar {
+  width: 8vw;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-nav-icon {
+  height: 8vh;
+  width: 8vw;
+}

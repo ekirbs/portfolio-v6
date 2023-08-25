@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.showcase-card {
+.showcase-inner-card {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@
   align-items: center;
 }
 
-.project-title {
+.showcase-title {
   text-decoration: underline;
   font-size: 300%;
   color: var(--quatrinary);
@@ -61,11 +61,11 @@
   text-align: center;
 }
 
-.project-img {
+.showcase-img {
   width: 90%;
 }
 
-.project-description {
+.showcase-description {
   font-size: 200%;
   color: var(--quatrinary);
   width: 90%;
@@ -95,6 +95,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 2px 2px 4px var(--black);
 }
 
 .showcase-buttons a:hover {
@@ -112,7 +113,8 @@
   min-width: 15vw;
   border-radius: 10px;
   padding: 10px;
-  background-color: var(--secondary); 
+  background-color: var(--secondary);
+  box-shadow: 4px 4px 4px var(--black);
 }
 
 .showcase-list-title {
