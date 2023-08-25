@@ -1,0 +1,49 @@
+.variable-style {
+  width: 100vw;
+  min-height: 60vh;
+  /* background-color: khaki; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  background: var(--darkNavy);
+  color: var(--white);
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.variable-header {
+  margin-top: 2vh;
+}
+
+.var-img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)) contrast(var(--contrast)) hue-rotate(var(--hue-rotate));
+  margin-bottom: 10vh;
+  opacity: var(--opacity);
+  }
+
+.hl {
+  color: var(--base);
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+.controls-top {
+  margin-bottom: 50px;
+}
+
+.var-label,
+.var-input {
+  margin: 2vh;
+}
+
+.var-input {
+  width: 100px;
+}

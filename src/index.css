@@ -51,6 +51,23 @@
   --msoffice: #2d3952;
 
   --border-radius: 5%;
+
+  /* projects colors */
+  --clockOffWhite: #EFEFEF;
+  --seaBlue: #018DED;
+  --darkNavy: #193549;
+  --ghostWhite: ghostwhite;
+  --netflixRed: #e50914;
+  --netflixDark: #141414;
+
+  /* variable styling root */
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+
+  --contrast: 1;
+  --hue-rotate: 0deg;
+  --opacity: 1;
 }
 
 /* GLOBAL EFFECTS */

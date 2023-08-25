@@ -15,7 +15,7 @@ import {
   Contact,
   Footer,
 } from "./components";
-import { Main, Clock, Weather } from "./components/Projects";
+import { Main, Clock, Netflix, VariableStyle, Weather } from "./components/Projects";
 import "./App.css";
 
 export default function App() {
@@ -27,6 +27,12 @@ export default function App() {
     }
     if (currentPage === "Clock") {
       return <Clock />;
+    }
+    if (currentPage === "Netflix") {
+      return <Netflix />;
+    }
+    if (currentPage === "VariableStyle") {
+      return <VariableStyle />;
     }
     return <Weather />
   };

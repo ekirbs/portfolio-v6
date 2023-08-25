@@ -1,17 +1,18 @@
 import React from "react";
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { AiFillClockCircle, AiFillHome } from "react-icons/ai";
+import { AiOutlineClockCircle, AiOutlineHome } from "react-icons/ai";
+import { GiSettingsKnobs } from "react-icons/gi";
+import { SiNetflix } from "react-icons/si";
 import { TiWeatherDownpour } from "react-icons/ti";
-import { robotHead } from "../../assets/images";
 import PropTypes from "prop-types";
 import "./projectsNavbar.css";
 
 const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
   const projects = [
-    { id: "Main", name: "Main", icon: AiFillHome },
-    { id: "Clock", name: "Clock", icon: AiFillClockCircle },
+    { id: "Main", name: "Main", icon: AiOutlineHome },
+    { id: "Clock", name: "Clock", icon: AiOutlineClockCircle },
+    { id: "Netflix", name: "Netflix", icon: SiNetflix },
+    { id: "VariableStyle", name: "VariableStyle", icon: GiSettingsKnobs },
     { id: "Weather", name: "Weather", icon: TiWeatherDownpour },
-    // Add more projects here
   ];
 
   return (
