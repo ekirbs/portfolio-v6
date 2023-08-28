@@ -1,9 +1,9 @@
 .projects-navbar {
-  width: 9vw;
+  width: 8.5vw;
   min-height: 75vh;
   display: flex;
   justify-content: center;
-  background-color: var(--tertiary);
+  background-color: var(--secondary);
   border-right: 5px solid var(--black);
 }
 
@@ -12,6 +12,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: var(--primary);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .icon-container {
@@ -23,6 +27,6 @@
 }
 
 .p-nav-icon {
-  height: 8vh;
-  width: 8vw;
+  height: 7vh;
+  width: 7vw;
 }

@@ -1,37 +1,46 @@
 .main {
-  background: url(../../../assets/images/black-space.jpg) center center fixed;
+  /* background: url(../../../assets/images/black-space.jpg) center center fixed; */
   /* background: url(../../assets/images/tree-road.jpg) no-repeat center center fixed; */
-  background-repeat: repeat-y; /* Repeat vertically if content overflows */
-  -webkit-background-size: cover;
+  /* background-repeat: repeat-y; Repeat vertically if content overflows */
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  min-height: 90vh;
+  background-size: cover; */
+  background-color: var(--passport);
+  min-height: 75vh;
   min-width: 90.5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 5vh 0;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
 .main-section {
-  height: 50vh;
+  min-height: 50vh;
   width: 85vw;
   border: 2px solid var(--white);
   border-radius: 20px;
   margin: 2vh;
-  padding: 2vh;
+  padding: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .main-head {
   color: var(--white);
   text-decoration: underline;
-  margin: 10px auto;
+  font-size: 4rem;
+  margin: 1rem auto;
 }
 
 .main-text {
   color: var(--white);
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }

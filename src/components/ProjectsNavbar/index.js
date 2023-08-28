@@ -9,13 +9,13 @@ import "./projectsNavbar.css";
 
 const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
   const projects = [
-    { id: "Main", name: "Main", icon: AiOutlineHome },
-    { id: "Camera", name: "Camera", icon: AiOutlineVideoCamera },
-    { id: "Clock", name: "Clock", icon: AiOutlineClockCircle },
-    { id: "Drumkit", name: "Drumkit", icon: FaDrum },
-    { id: "Netflix", name: "Netflix", icon: SiNetflix },
-    { id: "VariableStyle", name: "VariableStyle", icon: GiSettingsKnobs },
-    { id: "Weather", name: "Weather", icon: TiWeatherDownpour },
+    { id: "Main", name: "Main", icon: AiOutlineHome, color: "ghostWhite" },
+    { id: "Camera", name: "Camera", icon: AiOutlineVideoCamera, color: "highlight" },
+    { id: "Clock", name: "Clock", icon: AiOutlineClockCircle, color: "seaBlue" },
+    { id: "Drumkit", name: "Drumkit", icon: FaDrum, color: "mongo" },
+    { id: "Netflix", name: "Netflix", icon: SiNetflix, color: "netflixRed" },
+    { id: "VariableStyle", name: "VariableStyle", icon: GiSettingsKnobs, color: "base" },
+    { id: "Weather", name: "Weather", icon: TiWeatherDownpour, color: "github" },
   ];
 
   return (
@@ -26,7 +26,14 @@ const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
             key={project.id}
             className={currentPage === project.id ? "active" : ""}
           >
-            <div onClick={() => handlePageChange(project.id)} className="icon-container">
+            <div onClick={() => handlePageChange(project.id)}
+              className="icon-container"
+              style={
+                project.color
+                ? {color: `var(--${project.color})`}
+                : {}
+              }
+            >
               {project.icon && <project.icon className="p-nav-icon" />}
               {project.name}
             </div>
