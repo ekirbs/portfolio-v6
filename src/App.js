@@ -15,7 +15,7 @@ import {
   Contact,
   Footer,
 } from "./components";
-import { Main, Clock, Netflix, VariableStyle, Weather } from "./components/Projects";
+import { Main, Camera, Clock, Drumkit, Netflix, VariableStyle, Weather } from "./components/Projects";
 import "./App.css";
 
 export default function App() {
@@ -25,8 +25,14 @@ export default function App() {
     if (currentPage === "Main") {
       return <Main />;
     }
+    if (currentPage === "Camera") {
+      return <Camera />;
+    }
     if (currentPage === "Clock") {
       return <Clock />;
+    }
+    if (currentPage === "Drumkit") {
+      return <Drumkit />;
     }
     if (currentPage === "Netflix") {
       return <Netflix />;

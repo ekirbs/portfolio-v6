@@ -1,13 +1,6 @@
 import { useState } from "react";
 import classnames from "classnames";
-import {
-  FaDoorOpen,
-  FaTabletAlt,
-  FaTags,
-  FaCheck,
-  FaTimes,
-  FaChevronRight,
-} from "react-icons/fa";
+import { FaDoorOpen, FaTabletAlt, FaTags, FaCheck, FaTimes } from "react-icons/fa";
 import {
   NetflixLogo,
   TabContent_1,
@@ -16,24 +9,23 @@ import {
   TabContent_2_3,
 } from "./img";
 import styles from "./Netflix.module.css";
-import "./netflix.css";
 
 export default function Netflix() {
-  const [activeTab, setActiveTab] = useState("netflix-tab-1");
+  const [activeTab, setActiveTab] = useState("tab-1");
 
   const tabItems = [
     {
-      id: "netflix-tab-1",
+      id: "tab-1",
       text: "Cancel anytime",
       icon: FaDoorOpen,
     },
     {
-      id: "netflix-tab-2",
+      id: "tab-2",
       text: "Watch anywhere",
       icon: FaTabletAlt,
     },
     {
-      id: "netflix-tab-3",
+      id: "tab-3",
       text: "Pick your price",
       icon: FaTags,
     },
@@ -45,63 +37,65 @@ export default function Netflix() {
 
   return (
     <div id="netflix" className={styles.netflix}>
-      <header className="netflix-showcase">
-        <div className="netflix-showcase-top">
+      <header className={styles.showcase}>
+        <div className={`${styles["showcase-top"]}`}>
           <img src={NetflixLogo} alt="Netflix" />
-          <a href="#" className="netflix-btn netflix-btn-rounded">
+          <a href="#" className={`${styles.btn} ${styles["btn-rounded"]}`}>
             Sign In
           </a>
         </div>
-        <div className="netflix-showcase-content">
+        <div className={`${styles["showcase-content"]}`}>
           <h1>See what's next</h1>
           <p>Watch anywhere. Cancel anytime</p>
-          <a href="#" className="netflix-btn netflix-btn-xl">
+          <a href="#" className={`${styles.btn} ${styles["btn-xl"]}`}>
             Watch Free For 30 Days{" "}
-            <FaChevronRight className="netflix-btn-icon" />
+            <i
+              className={`${styles.fas} ${styles["fa-chevron-right"]} ${styles["btn-icon"]}`}
+            ></i>
           </a>
         </div>
       </header>
 
-      <section className="netflix-tabs">
-        <div className="netflix-container">
+      <section className={styles.tabs}>
+        <div className={styles.container}>
           {tabItems.map((tab) => (
             <div
               key={tab.id}
               id={tab.id}
-              className={classnames("netflix-tab-item", {
-                "netflix-tab-border": activeTab === tab.id,
+              className={classnames(styles["tab-item"], {
+                [styles["tab-border"]]: activeTab === tab.id,
               })}
               onClick={() => selectItem(tab.id)}
             >
               <tab.icon
-                className={classnames("fa-3x", {
-                  "fa-door-open": tab.id === "netflix-tab-1",
-                  "fa-tablet-alt": tab.id === "netflix-tab-2",
-                  "fa-tags": tab.id === "netflix-tab-3",
+                className={classnames(styles.fas, styles["fa-3x"], {
+                  [styles["fa-door-open"]]: tab.id === "tab-1",
+                  [styles["fa-tablet-alt"]]: tab.id === "tab-2",
+                  [styles["fa-tags"]]: tab.id === "tab-3",
                 })}
               />
-              <p className="netflix-hide-sm">{tab.text}</p>
+              <p className={styles["hide-sm"]}>{tab.text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="netflix-tab-content">
-        <div className="netflix-container">
+      <section className={`${styles["tab-content"]}`}>
+        <div className={styles.container}>
           {/* Tab 1 Content */}
           <div
-            id="netflix-tab-1-content"
-            className={classnames("netflix-tab-content-item", {
-              "netflix-show": activeTab === "netflix-tab-1",
+            id="tab-1-content"
+            className={classnames(styles["tab-content-item"], {
+              [styles.show]: activeTab === "tab-1",
             })}
           >
-            <div className="netflix-tab-1-content-inner">
+            <div className={`${styles["tab-1-content-inner"]}`}>
               <div>
-                <p className="netflix-text-lg">
+                <p className={`${styles["text-lg"]}`}>
                   If you decide Netflix isn't for you - no problem. No
                   commitment. Cancel online anytime.
                 </p>
-                <a href="#" className="netflix-btn netflix-btn-lg">
+                <a href="#" className={`${styles.btn} ${styles["btn-lg"]}`}>
                   Watch Free For 30 Days
                 </a>
               </div>
@@ -111,25 +105,25 @@ export default function Netflix() {
 
           {/* Tab 2 Content */}
           <div
-            id="netflix-tab-2-content"
-            className={classnames("netflix-tab-content-item", {
-              "netflix-show": activeTab === "netflix-tab-2",
+            id="tab-2-content"
+            className={classnames(styles["tab-content-item"], {
+              [styles.show]: activeTab === "tab-2",
             })}
           >
-            <div className="netflix-tab-2-content-top">
-              <p className="netflix-text-lg">
+            <div className={`${styles["tab-2-content-top"]}`}>
+              <p className={`${styles["text-lg"]}`}>
                 Watch TV shows and movies anytime, anywhere - personalized for
                 you.
               </p>
-              <a href="#" className="netflix-btn netflix-btn-lg">
+              <a href="#" className={`${styles.btn} ${styles["btn-lg"]}`}>
                 Watch Free For 30 Days
               </a>
             </div>
-            <div className="netflix-tab-2-content-bottom">
+            <div className={`${styles["tab-2-content-bottom"]}`}>
               <div>
                 <img src={TabContent_2_1} alt="Netflix Daredevil page" />
-                <p className="netflix-text-md">Watch on your TV</p>
-                <p className="netflix-text-dark">
+                <p className={`${styles["text-md"]}`}>Watch on your TV</p>
+                <p className={`${styles["text-dark"]}`}>
                   Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                   players and more.
                 </p>
@@ -137,38 +131,40 @@ export default function Netflix() {
 
               <div>
                 <img src={TabContent_2_2} alt="Netflix Daredevil page" />
-                <p className="netflix-text-md">
+                <p className={`${styles["text-md"]}`}>
                   Watch instantly or download for later
                 </p>
-                <p className="netflix-text-dark">
+                <p className={`${styles["text-dark"]}`}>
                   Available on phone and tablet, wherever you go.
                 </p>
               </div>
 
               <div>
                 <img src={TabContent_2_3} alt="Netflix Daredevil page" />
-                <p className="netflix-text-md">Use any computer</p>
-                <p className="netflix-text-dark">Watch right on Netflix.com.</p>
+                <p className={`${styles["text-md"]}`}>Use any computer</p>
+                <p className={`${styles["text-dark"]}`}>
+                  Watch right on Netflix.com.
+                </p>
               </div>
             </div>
           </div>
 
           {/* Tab 3 Content */}
           <div
-            id="netflix-tab-3-content"
-            className={classnames("netflix-tab-content-item", {
-              "netflix-show": activeTab === "netflix-tab-3",
+            id="tab-3-content"
+            className={classnames(styles["tab-content-item"], {
+              [styles.show]: activeTab === "tab-3",
             })}
           >
-            <div className="netflix-text-center">
-              <p className="netflix-text-lg">
+            <div className={`${styles["text-center"]}`}>
+              <p className={`${styles["text-lg"]}`}>
                 Choose one plan and watch everything on Netflix.
               </p>
-              <a href="#" className="netflix-btn netflix-btn-lg">
+              <a href="#" className={`${styles.btn} ${styles["btn-lg"]}`}>
                 Watch Free For 30 Days
               </a>
             </div>
-            <table className="netflix-table">
+            <table className={`${styles.table}`}>
               <thead>
                 <tr>
                   <th></th>
@@ -190,25 +186,25 @@ export default function Netflix() {
                 <tr>
                   <td>HD Available</td>
                   <td>
-                    <FaTimes />
+                    <FaTimes className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
                 <tr>
                   <td>Ultra HD Available</td>
                   <td>
-                    <FaTimes />
+                    <FaTimes className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaTimes />
+                    <FaTimes className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
                 <tr>
@@ -220,49 +216,49 @@ export default function Netflix() {
                 <tr>
                   <td>Watch on your laptop, TV, phone and tablet</td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
                 <tr>
                   <td>Unlimited movies and TV shows</td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
                 <tr>
                   <td>Cancel anytime</td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
                 <tr>
                   <td>First month free</td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                   <td>
-                    <FaCheck />
+                    <FaCheck className={`${styles.fas}`} />
                   </td>
                 </tr>
               </tbody>
@@ -271,9 +267,9 @@ export default function Netflix() {
         </div>
       </section>
 
-      <footer className="netflix-footer">
+      <footer className={`${styles.footer}`}>
         <p>Questions? Call 1-866-579-7172</p>
-        <div className="netflix-footer-cols">
+        <div className={`${styles["footer-cols"]}`}>
           <ul>
             <li>
               <a href="#">FAQ</a>

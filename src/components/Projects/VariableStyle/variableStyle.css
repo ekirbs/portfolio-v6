@@ -1,7 +1,6 @@
 .variable-style {
   width: 100vw;
   min-height: 60vh;
-  /* background-color: khaki; */
   display: flex;
   justify-content: center;
   align-items: center;

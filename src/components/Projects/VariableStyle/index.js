@@ -37,7 +37,7 @@ export default function VariableStyle() {
           name="spacing"
           min="10"
           max="200"
-          defaultValue="10"
+          defaultValue="20"
           data-sizing="px"
           className="var-input"
         ></input>
@@ -49,7 +49,7 @@ export default function VariableStyle() {
           name="blur"
           min="0"
           max="25"
-          defaultValue="5"
+          defaultValue="0"
           data-sizing="px"
           className="var-input"
         ></input>

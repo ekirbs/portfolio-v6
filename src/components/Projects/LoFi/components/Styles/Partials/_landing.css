@@ -1,0 +1,10 @@
+
+.landing-container {
+  background-image: url("../../../images/lofi-img.webp");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 4;
+}

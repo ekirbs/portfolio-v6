@@ -1,0 +1,33 @@
+.track {
+  border-radius: 4px;
+}
+
+.track:hover {
+  background-color: #b8a4ffe7;
+}
+
+.library-music {
+  padding: 1rem 2rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.library-music img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.library-title {
+  padding-left: 2rem;
+  align-items: left;
+}
+
+.library-title h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.library-title h4 {
+  font-size: 0.8rem;
+  color: #281e3f;
+}

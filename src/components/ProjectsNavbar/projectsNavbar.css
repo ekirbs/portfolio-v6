@@ -1,14 +1,16 @@
 .projects-navbar {
-  width: 8vw;
+  width: 9vw;
   min-height: 75vh;
   display: flex;
   justify-content: center;
+  background-color: var(--tertiary);
+  border-right: 5px solid var(--black);
 }
 
 .projects-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -17,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5vh auto;
 }
 
 .p-nav-icon {

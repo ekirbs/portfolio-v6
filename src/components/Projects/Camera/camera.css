@@ -1,0 +1,75 @@
+.camera {
+  width: 100vw;
+  min-height: 60vh;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.media-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.image-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.picture-container {
+  margin-top: 20px;
+}
+
+.camera-title {
+  color: white;
+  font-size: 14px;
+}
+
+.video-container {
+  margin-top: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#take-picture-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.picture-container {
+  margin-top: 10px;
+}
+
+.picture-container img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: transform 0.2s ease;
+}
+
+.picture-container img:hover {
+  transform: scale(2.0);
+}

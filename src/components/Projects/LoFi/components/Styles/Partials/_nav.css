@@ -1,0 +1,43 @@
+.lofi-nav {
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+}
+
+.lofi-nav-btn {
+  background: transparent;
+  border: 2px solid var(--highdark);
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+/* .lofi-nav-btn {
+  color: var(--turq);
+  padding: .75rem .375rem;
+  font-size: 1rem;
+  font-weight: 400px;
+  line-height: 1.5%;
+  border-width: 1px;
+  border-radius: .375rem;
+  box-shadow: 1px 1px 2px var(--black);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;  
+} */
+
+.lofi-nav-btn:hover {
+  color: var(--white);
+  background: var(--dark); 
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: var(--highlight);
+}
