@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import "./variableStyle.css";
+import "./variables.css";
 
-export default function VariableStyle() {
+export default function Variables() {
   useEffect(() => {
     const inputs = document.querySelectorAll(".controls input");
 

@@ -24,9 +24,34 @@
   justify-content: center;
   align-items: center;
   margin: 5vh auto;
+  transition: transform 0.2s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.2);
 }
 
 .p-nav-icon {
   height: 7vh;
   width: 7vw;
+}
+
+li.active .icon-container {
+  transform: scale(1.2);
+  position: relative;
+}
+
+li.active .icon-container::before {
+  content: '';
+  position: absolute;
+  width: calc(100% - 2vh);
+  height: calc(150% - 2vh);
+  border-radius: 25%;
+  border: 2px solid var(--highlight);
+  box-sizing: border-box;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }

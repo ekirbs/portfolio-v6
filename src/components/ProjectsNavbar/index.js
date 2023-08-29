@@ -14,8 +14,8 @@ const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
     { id: "Clock", name: "Clock", icon: AiOutlineClockCircle, color: "seaBlue" },
     { id: "Drumkit", name: "Drumkit", icon: FaDrum, color: "mongo" },
     { id: "Netflix", name: "Netflix", icon: SiNetflix, color: "netflixRed" },
-    { id: "VariableStyle", name: "VariableStyle", icon: GiSettingsKnobs, color: "base" },
-    { id: "Weather", name: "Weather", icon: TiWeatherDownpour, color: "github" },
+    { id: "Variables", name: "Variables", icon: GiSettingsKnobs, color: "base" },
+    // { id: "Weather", name: "Weather", icon: TiWeatherDownpour, color: "github" },
   ];
 
   return (

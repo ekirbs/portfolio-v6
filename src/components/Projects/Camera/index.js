@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
+import { FaTimes } from "react-icons/fa";
 import "./camera.css";
 
 export default function Camera() {
   const videoRef = useRef(null);
-  const canvasRef = useRef(null);
+  // const canvasRef = useRef(null);
 
   useEffect(() => {
     let videoStream;
@@ -53,19 +54,29 @@ export default function Camera() {
     pictureContainer.appendChild(pictureCard);
   };
 
+  const clearPictures = () => {
+    const pictureContainer = document.querySelector(".picture-container");
+    pictureContainer.innerHTML = "";
+  };
+
   return (
     <div id="camera" className="camera">
       <h4 className="camera-title">This is the video page.</h4>
       <h6 className="camera-title">
-        Do you have a camera on your device? This project is incomplete.
+        Do you have a camera on your device? This project uses the camera!
       </h6>
       <div className="media-row">
         <div className="video-col">
           <video ref={videoRef} autoPlay></video>
 
-          <button id="take-picture-btn" onClick={takePicture}>
-            Take Picture
-          </button>
+          <div className="buttons-container">
+            <button id="take-picture-btn" onClick={takePicture}>
+              Take Picture
+            </button>
+            <button id="clear-pictures-btn" onClick={clearPictures}>
+              Clear Pictures
+            </button>
+          </div>
         </div>
         <div className="image-col">
           <div className="picture-container">

@@ -43,6 +43,12 @@
   cursor: pointer;
 }
 
+.drumkit-text {
+  font-size: 1.5rem;
+  padding: 5vh 10vw;
+  text-align: center;
+}
+
 .tune {
   width: 15vw;
 }

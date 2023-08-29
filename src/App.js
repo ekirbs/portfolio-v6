@@ -21,7 +21,7 @@ import {
   Clock,
   Drumkit,
   Netflix,
-  VariableStyle,
+  Variables,
   Weather,
 } from "./components/Projects";
 import "./App.css";
@@ -45,8 +45,8 @@ export default function App() {
     if (currentPage === "Netflix") {
       return <Netflix />;
     }
-    if (currentPage === "VariableStyle") {
-      return <VariableStyle />;
+    if (currentPage === "Variables") {
+      return <Variables />;
     }
     return <Weather />;
   };

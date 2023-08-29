@@ -56,19 +56,47 @@
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 80%;
+}
+
 #take-picture-btn {
+  min-height: 8vh;
+  min-width: 16vh;
   background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin: 1vh;
-  box-shadow: inset 6px 5px 12px #000000, inset -6px -5px 12px #000000;
+  transition: transform 0.2s ease;
 }
 
 #take-picture-btn:hover {
-  box-shadow: none;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 4px #000000;
+}
+
+#clear-pictures-btn {
+  min-height: 8vh;
+  min-width: 16vh;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1vh;
+  transition: transform 0.2s ease;
+}
+
+#clear-pictures-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .picture-card {

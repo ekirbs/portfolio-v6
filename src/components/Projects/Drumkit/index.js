@@ -48,7 +48,6 @@ export default function Drumkit() {
 
   const playSound = useCallback(
     (e, keyCode) => {
-      
       if (
         e.type === "keydown" ||
         e.type === "mousedown" ||
@@ -152,6 +151,13 @@ export default function Drumkit() {
           <SoundKey key={keyData.keyCode} {...keyData} playSound={playSound} />
         ))}
       </div>
+
+      <p className="drumkit-text">
+        This drumkit is touch-sensitive. Press the corresponding keyboard key,
+        click a sound with the mouse, or if you have a touch-sensitive screen
+        use your fingers! The sounds will play only as long as you hold the key
+        down.
+      </p>
 
       <div className="keys tune-keys" ref={keysContainerRef}>
         {tuneKeysData.map((keyData) => (
