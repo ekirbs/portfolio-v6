@@ -47,7 +47,7 @@ export default function Drumkit() {
   const [pressedKeys, setPressedKeys] = useState({});
 
   const playSound = useCallback(
-    (e, keyCode) => {
+    async (e, keyCode) => {
       if (
         e.type === "keydown" ||
         e.type === "mousedown" ||
@@ -64,9 +64,10 @@ export default function Drumkit() {
         setPressedKeys((prevState) => ({ ...prevState, [keyCode]: true }));
         key.classList.add("playing");
         audio.currentTime = 0;
-        setTimeout(() => {
-          audio.play();
-        }, 2);
+        // setTimeout(() => {
+        //   audio.play();
+        // }, 2);
+        await audio.play();
       } else if (
         e.type === "keyup" ||
         e.type === "mouseup" ||
@@ -83,10 +84,12 @@ export default function Drumkit() {
 
         setPressedKeys((prevState) => ({ ...prevState, [keyCode]: false }));
         key.classList.remove("playing");
-        audio.pause();
-        setTimeout(() => {
-          audio.currentTime = 0;
-        }, 2);
+        // audio.pause();
+        // setTimeout(() => {
+        //   audio.currentTime = 0;
+        // }, 2);
+        await audio.pause();
+        audio.currentTime = 0;
       }
     },
     [pressedKeys]

@@ -1,5 +1,5 @@
 .camera {
-  width: 100vw;
+  width: 91.5vw;
   min-height: 60vh;
   background-color: var(--darkNavy);
   display: flex;
@@ -115,4 +115,10 @@
 
 .picture-card img:hover {
   transform: scale(2.0);
+}
+
+@media screen and (max-width: 1100px) {
+  .camera {
+    width: 100vw;
+  }
 }

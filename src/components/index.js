@@ -6,7 +6,7 @@ export { default as Showcase } from "./Showcase";
 export { default as Techs } from "./Techs";
 export { default as ProjectsNavbar } from "./ProjectsNavbar";
 export { default as AboutHeader } from "./AboutHeader";
-export { default as About } from "./About/indexSandbox";
+export { default as About } from "./About";
 export { default as ResumeDivider } from "./ResumeDivider";
 export { default as Resume } from "./Resume";
 export { default as ContactHeader } from "./ContactHeader";

@@ -1,5 +1,5 @@
 .variable-style {
-  width: 100vw;
+  width: 91.5vw;
   min-height: 60vh;
   display: flex;
   justify-content: center;
@@ -45,4 +45,10 @@
 
 .var-input {
   width: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+  .variable-style {
+    width: 100vw;
+  }
 }

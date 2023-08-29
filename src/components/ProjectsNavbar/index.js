@@ -35,7 +35,9 @@ const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
               }
             >
               {project.icon && <project.icon className="p-nav-icon" />}
-              {project.name}
+              <div className="project-name">
+                {project.name}
+              </div>
             </div>
           </li>
         ))}

@@ -8,7 +8,7 @@ export { default as puddleShineGif } from "./puddle-shine.gif";
 export { default as puddleStoresGif } from "./puddle-stores.gif";
 export { default as rainGif } from "./rain.gif";
 
-export { default as ResumeImg } from "./resume-img.png";
+export { default as ResumeImg } from "./resume-img.jpg";
 export { default as ResumeDownload } from "./resume-download.pdf";
 
 export { default as ccmLogo } from "./ccm-logo.png";
