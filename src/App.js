@@ -15,7 +15,15 @@ import {
   Contact,
   Footer,
 } from "./components";
-import { Main, Camera, Clock, Drumkit, Netflix, VariableStyle, Weather } from "./components/Projects";
+import {
+  Main,
+  Camera,
+  Clock,
+  Drumkit,
+  Netflix,
+  VariableStyle,
+  Weather,
+} from "./components/Projects";
 import "./App.css";
 
 export default function App() {
@@ -40,7 +48,7 @@ export default function App() {
     if (currentPage === "VariableStyle") {
       return <VariableStyle />;
     }
-    return <Weather />
+    return <Weather />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -54,7 +62,10 @@ export default function App() {
       <Showcase />
       <Techs />
       <div className="projects-container">
-        <ProjectsNavbar currentPage={currentPage} handlePageChange={handlePageChange} />
+        <ProjectsNavbar
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
         {renderPage()}
       </div>
       <AboutHeader />

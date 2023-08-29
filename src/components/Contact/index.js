@@ -15,7 +15,7 @@ export default function Contact() {
     reply_to: "",
     message: "",
   });
-  const [submitted, setSubmit] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -52,13 +52,6 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // if (!validateEmail(formInput.reply_to) || !formInput.from_name) {
-    //   setErrorMessage(
-    //     "Either you didn't enter a name, or the email address you entered is invalid."
-    //   );
-    //   return;
-    // }
-
     if (!handleValidation()) {
       return;
     }
@@ -75,7 +68,7 @@ export default function Contact() {
       .then((response) => {
         alert(`Welcome to the jungle, ${formInput.from_name}!`);
         console.log("SUCCESS!", response.status, response.text);
-        setSubmit(true);
+        setSubmitted(true);
         setFormInput({
           from_name: "",
           reply_to: "",
@@ -147,28 +140,12 @@ export default function Contact() {
                     />
                     <div className="contact-button-div">
                       <SendButton onClick={handleFormSubmit} />
-                      {/* <button
-                        type="button"
-                        className="slideButton contact-button"
-                        onClick={handleFormSubmit}
-                      >
-                        <AiFillSound className="sound-icon-left" />
-                        Send It
-                        <AiFillSound className="sound-icon-right" />
-                      </button> */}
                     </div>
                     <div>
                       <p className="contact-card-content contact-form-content">
                         (A sound will play when you send it)
                       </p>
                     </div>
-                    {/* <button
-                      type="button"
-                      className="btn btn-secondary contact-button"
-                      onClick={handleFormSubmit}
-                    >
-                      Send It
-                    </button> */}
                   </form>
                   {errorMessage && (
                     <div className="error-div">

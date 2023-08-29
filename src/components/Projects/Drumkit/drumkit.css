@@ -1,14 +1,13 @@
 .drumkit {
+  min-height: 50vh;
   width: 100vw;
-  min-height: 60vh;
-  min-width: 90.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   font-size: 10px;
-  background: url(../../../assets/images/savannah-background.jpg) bottom center;
+  background: url(../../../assets/images/savannah.jpg) bottom center;
   background-size: cover;
 
   margin: 0;
@@ -28,7 +27,7 @@
 .key {
   border: .4rem solid var(--black);
   border-radius: .5rem;
-  margin: 1rem;
+  margin: 1rem .5rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;

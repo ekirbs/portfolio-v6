@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { useEffect, useRef } from "react";
 import "./camera.css";
 
 export default function Camera() {
@@ -46,18 +45,20 @@ export default function Camera() {
     const img = document.createElement("img");
     img.src = imageUrl;
 
-    const pictureContainer = document.createElement("div");
-    pictureContainer.classList.add("picture-container");
-    pictureContainer.appendChild(img);
+    const pictureCard = document.createElement("div");
+    pictureCard.classList.add("picture-card");
+    pictureCard.appendChild(img);
 
-    const videoContainer = document.querySelector(".video-container");
-    videoContainer.appendChild(pictureContainer);
+    const pictureContainer = document.querySelector(".picture-container");
+    pictureContainer.appendChild(pictureCard);
   };
 
   return (
     <div id="camera" className="camera">
       <h4 className="camera-title">This is the video page.</h4>
-      <h6 className="camera-title">Do you have a camera on your device? This project is incomplete.</h6>
+      <h6 className="camera-title">
+        Do you have a camera on your device? This project is incomplete.
+      </h6>
       <div className="media-row">
         <div className="video-col">
           <video ref={videoRef} autoPlay></video>
@@ -67,8 +68,8 @@ export default function Camera() {
           </button>
         </div>
         <div className="image-col">
-          <div className="video-container">
-            <canvas ref={canvasRef}></canvas>
+          <div className="picture-container">
+            {/* <canvas ref={canvasRef}></canvas> */}
           </div>
         </div>
       </div>

@@ -147,13 +147,13 @@ export default function Drumkit() {
 
   return (
     <div className="drumkit">
-      <div className="keys" ref={keysContainerRef}>
+      <div className="keys sound-keys" ref={keysContainerRef}>
         {soundKeysData.map((keyData) => (
           <SoundKey key={keyData.keyCode} {...keyData} playSound={playSound} />
         ))}
       </div>
 
-      <div className="keys" ref={keysContainerRef}>
+      <div className="keys tune-keys" ref={keysContainerRef}>
         {tuneKeysData.map((keyData) => (
           <SoundKey key={keyData.keyCode} {...keyData} playSound={playSound} />
         ))}
