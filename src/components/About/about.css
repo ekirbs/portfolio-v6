@@ -92,3 +92,14 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .about title {
+    font-size: 1rem;
+  }
+
+  .about-text {
+    font-size: .75rem;
+    padding: 1vh;
+  }
+}

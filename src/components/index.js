@@ -2,7 +2,7 @@ export { default as Header } from "./Header";
 export { default as Navbar } from "./Navbar";
 export { default as WorkHeader } from "./WorkHeader";
 export { default as Divider } from "./Divider";
-export { default as Showcase } from "./Showcase";
+export { default as Showcase } from "./Showcase/index2";
 export { default as Techs } from "./Techs";
 export { default as ProjectsNavbar } from "./ProjectsNavbar";
 export { default as AboutHeader } from "./AboutHeader";

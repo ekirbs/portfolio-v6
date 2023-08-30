@@ -4,10 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SiGithub } from "react-icons/si";
 import { GrDeploy } from "react-icons/gr";
-import { Row, Col } from "react-bootstrap";
 import ArrowButton from "./arrow";
 import Showcase from "./showcaseArray";
-import "./showcase.css";
+import "./showcase2.css";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -31,8 +30,9 @@ export default class SimpleSlider extends Component {
                 index
               ) => (
                 <div className="showcase-inner-card">
-                  <Row className="showcase-row">
-                    <Col className="showcase-info-container">
+
+                  <div className="showcase-row">
+                    <div className="showcase-info-container">
                       <h3 className="showcase-title">{title}</h3>
                       <img
                         className="showcase-img"
@@ -53,28 +53,28 @@ export default class SimpleSlider extends Component {
                           <SiGithub className="button-icon-right" />
                         </a>
                       </div>
-                    </Col>
-                    <Col>
-                      <div className="tech-list-container">
-                        <ul
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                            justifyContent: "center",
-                          }}
-                          className="showcase-list"
-                        >
-                          <h4 className="showcase-list-title">Technologies:</h4>
-                          {technologies.map((tech, i) => (
-                            <li key={i} className="showcase-list-item">
-                              {tech}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </Col>
-                  </Row>
+                    </div>
+
+                    <div className="tech-list-container">
+                      <ul
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                        className="showcase-list"
+                      >
+                        <h4 className="showcase-list-title">Technologies:</h4>
+                        {technologies.map((tech, i) => (
+                          <li key={i} className="showcase-list-item">
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  
+                  </div>
                 </div>
               )
             )}

@@ -26,15 +26,15 @@ const Showcase = [
     "github": "https://github.com/slerner/task-sandwich",
     "description": "A task-management system with built in rewards system.",
     "technologies": [
-      <h6 className="highlight react-highlight"><FaReact className="tech-icon" />React.js</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>,
-      <h6 className="highlight graph-highlight"><SiGraphql className="tech-icon" />GraphQL</h6>,
-      <h6 className="highlight mongo-highlight"><DiMongodb className="tech-icon" />MongoDB</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight apollo-highlight"><SiApollographql className="tech-icon" />Apollo</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" />Node.js</h6>,
-      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" />Express.js</h6>,
+      <h6 className="highlight react-highlight"><FaReact className="tech-icon" /><span className="tech-text">React.js</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>,
+      <h6 className="highlight graph-highlight"><SiGraphql className="tech-icon" /><span className="tech-text">GraphQL</span></h6>,
+      <h6 className="highlight mongo-highlight"><DiMongodb className="tech-icon" /><span className="tech-text">MongoDB</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight apollo-highlight"><SiApollographql className="tech-icon" /><span className="tech-text">Apollo</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" /><span className="tech-text">Node.js</span></h6>,
+      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" /><span className="tech-text">Express.js</span></h6>,
     ]
   },
   {
@@ -45,13 +45,13 @@ const Showcase = [
     "github": "https://github.com/ekirbs/street-food-blog",
     "description": "Locate street food vendors in Boston. Find out information about them and discuss with other users.",
     "technologies": [
-      <h6 className="highlight hbrs-highlight"><SiHandlebarsdotjs className="tech-icon" />Handlebars</h6>,
-      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" />Node.js</h6>,
-      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" />JQuery</h6>,
-      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" />Express.js</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight hbrs-highlight"><SiHandlebarsdotjs className="tech-icon" /><span className="tech-text">Handlebars</span></h6>,
+      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" /><span className="tech-text">Node.js</span></h6>,
+      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" /><span className="tech-text">JQuery</span></h6>,
+      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" /><span className="tech-text">Express.js</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   },
   {
@@ -61,11 +61,11 @@ const Showcase = [
     "github": "https://github.com/ekirbs/daily-schedule-planner",
     "description": "A Daily Schedule Planner to allows the saving, organization, and deletion of daily activities.",
     "technologies": [
-      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" />JQuery</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>,
-      <h6 className="highlight bootstrap-highlight"><DiBootstrap className="tech-icon" />Bootstrap</h6>
+      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" /><span className="tech-text">JQuery</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>,
+      <h6 className="highlight bootstrap-highlight"><DiBootstrap className="tech-icon" /><span className="tech-text">Bootstrap</span></h6>
     ]
   },
   {
@@ -75,9 +75,9 @@ const Showcase = [
     "github": "https://github.com/ekirbs/the-big-quiz",
     "description": "The BIG Quiz.  A timed quiz that stores and displays high scores.",
     "technologies": [
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   },
   {
@@ -87,10 +87,10 @@ const Showcase = [
     "github": "https://github.com/ekirbs/national-park-travelers-guide",
     "description": "A Traveler's Guide to all National Parks in Northeast USA.",
     "technologies": [
-      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" />JQuery</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" /><span className="tech-text">JQuery</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   },
   {
@@ -100,10 +100,10 @@ const Showcase = [
     "github": "https://github.com/ekirbs/random-password-generator",
     "description": "A Random Password Generator to provide secure passwords privately.",
     "technologies": [
-      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" />JQuery</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" /><span className="tech-text">JQuery</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   },
   {
@@ -113,10 +113,10 @@ const Showcase = [
     "github": "https://github.com/ekirbs/weather-forecast-finder",
     "description": "A Weather Forecast search function using the OpenWeatherMapAPI.",
     "technologies": [
-      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" />JQuery</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight jq-highlight"><SiJquery className="tech-icon" /><span className="tech-text">JQuery</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   },
   {
@@ -126,12 +126,12 @@ const Showcase = [
     "github": "https://github.com/ekirbs/express-note-taker",
     "description": "An application that stores, displays, and manages notes.  (Not currently deployed).",
     "technologies": [
-      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" />Express.js</h6>,
-      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" />Node.js</h6>,
-      <h6 className="highlight bootstrap-highlight"><DiBootstrap className="tech-icon" />Bootstrap</h6>,
-      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" />HTML5</h6>,
-      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" />CSS3</h6>,
-      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" />JavaScript</h6>
+      <h6 className="highlight ex-highlight"><SiExpress className="tech-icon" /><span className="tech-text">Express.js</span></h6>,
+      <h6 className="highlight node-highlight"><FaNodeJs className="tech-icon" /><span className="tech-text">Node.js</span></h6>,
+      <h6 className="highlight bootstrap-highlight"><DiBootstrap className="tech-icon" /><span className="tech-text">Bootstrap</span></h6>,
+      <h6 className="highlight html-highlight"><FaHtml5 className="tech-icon" /><span className="tech-text">HTML5</span></h6>,
+      <h6 className="highlight css-highlight"><DiCss3 className="tech-icon" /><span className="tech-text">CSS3</span></h6>,
+      <h6 className="highlight js-highlight"><DiJavascript1 className="tech-icon" /><span className="tech-text">JavaScript</span></h6>
     ]
   }
 ]
