@@ -6,6 +6,7 @@ import {
   WorkHeader,
   Showcase,
   Techs,
+  ProjectsHeader,
   ProjectsNavbar,
   AboutHeader,
   About,
@@ -61,6 +62,7 @@ export default function App() {
       <WorkHeader />
       <Showcase />
       <Techs />
+      <ProjectsHeader />
       <div className="projects-container">
         <ProjectsNavbar
           currentPage={currentPage}

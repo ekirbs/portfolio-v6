@@ -39,6 +39,7 @@
 .camera-title {
   color: white;
   font-size: 14px;
+  text-align: center;
 }
 
 .picture-container {
@@ -120,5 +121,28 @@
 @media screen and (max-width: 1100px) {
   .camera {
     width: 100vw;
+  }
+
+  .camera-desc {
+    padding: 2vh;
+  }
+
+  .media-row {
+    flex-direction: column;
+  }
+
+  .video-col {
+    width: 90vw;
+  }
+
+  .picture-container {
+    width: 85vw;
+    padding: 1px;
+    text-align: start;
+    margin: 2vh;
+  }
+
+  .picture-card {
+    margin: 2px 2px;
   }
 }

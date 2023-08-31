@@ -25,7 +25,7 @@ export default function About() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSection((prevSection) => (prevSection + 1) % sections.length);
-    }, 10000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, []);

@@ -6,7 +6,7 @@ export default function Main() {
     <>
       <div className="main">
         <div className="main-section">
-          <h3 className="main-head">Explore Mini Projects</h3>
+          {/* <h3 className="main-head">Explore Mini Projects</h3> */}
           <p className="main-text">
             Welcome to my mini projects section! Here, you'll find a curated
             selection of small-scale projects that I've crafted. From

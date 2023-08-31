@@ -61,10 +61,12 @@ export default function Camera() {
 
   return (
     <div id="camera" className="camera">
-      <h4 className="camera-title">This is the video page.</h4>
-      <h6 className="camera-title">
-        Do you have a camera on your device? This project uses the camera!
-      </h6>
+      <div className="camera-desc">
+        <h4 className="camera-title">This is the video page.</h4>
+        <h6 className="camera-title">
+          Do you have a camera on your device? This project uses the camera!
+        </h6>
+      </div>
       <div className="media-row">
         <div className="video-col">
           <video ref={videoRef} autoPlay></video>
