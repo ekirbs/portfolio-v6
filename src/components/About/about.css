@@ -60,7 +60,8 @@
 }
 
 .about-content {
-  height: 20vh;
+  height: 25vh;
+  text-align: center;
 }
 
 .about-text {
@@ -91,20 +92,28 @@
   .about-card {
     flex-direction: column;
   }
+
+  .about-section {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-info {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .about-section {
     flex-direction: column;
-    text-align: center;
   }
 
-  .about-title {
+  /* .about-title {
     font-size: 1.2rem;
-  }
+  } */
 
   .about-text {
-    font-size: .85rem;
+    font-size: 1.2rem;
     padding: 1vh;
   }
 }
