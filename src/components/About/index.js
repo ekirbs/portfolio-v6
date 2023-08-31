@@ -47,10 +47,6 @@ export default function About() {
               onMouseEnter={() => {
                 setActiveSection(index);
               }}
-              // onMouseLeave={() => {
-              //   console.log("Leaving:", index);
-              //   setActiveSection(null);
-              // }}
               key={index}
             >
               {section.title}
