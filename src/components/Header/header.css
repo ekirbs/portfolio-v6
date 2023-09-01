@@ -1,6 +1,4 @@
 /* .header {
-  background-image: url(../../assets/images/black-space.jpg);
-  background-repeat: no-repeat;
   -webkit-background-attachment: fixed;
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
@@ -9,17 +7,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  margin-bottom: -10vh;
-  text-align: center;
+
 } */
 
 .header {
