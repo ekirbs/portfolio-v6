@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f0f44e0f.css",
+    "main.css": "/react-portfolio/static/css/main.7a7fc890.css",
     "main.js": "/react-portfolio/static/js/main.a53de32b.js",
     "static/media/profile-photo.jpg": "/react-portfolio/static/media/profile-photo.ca50f76884202c140179.jpg",
     "static/media/puddle-stores.gif": "/react-portfolio/static/media/puddle-stores.0d549535d1dec4b807e9.gif",
@@ -43,9 +43,9 @@
     "static/media/password-generator.png": "/react-portfolio/static/media/password-generator.b3f20d15227d280cd88e.png",
     "static/media/express-note-taker.png": "/react-portfolio/static/media/express-note-taker.88e595180c581fc90117.png",
     "static/media/snare.wav": "/react-portfolio/static/media/snare.3aa3f94341c18d1e00d1.wav",
+    "static/media/savannah.jpg": "/react-portfolio/static/media/savannah.6b408871984f214fce18.jpg",
     "static/media/lofi-img.webp": "/react-portfolio/static/media/lofi-img.4b77484ad782033bfddf.webp",
     "static/media/lew-logo.jpg": "/react-portfolio/static/media/lew-logo.486ee30a5fa07cabb874.jpg",
-    "static/media/savannah.jpg": "/react-portfolio/static/media/savannah.7ef27b5e9e76848e9ffc.jpg",
     "static/media/cms-logo.png": "/react-portfolio/static/media/cms-logo.1a03e77b1b5b0fd48f76.png",
     "static/media/linkedin-logo.jpg": "/react-portfolio/static/media/linkedin-logo.d85c32d23d11237ea004.jpg",
     "static/media/kick.wav": "/react-portfolio/static/media/kick.1d842c5565abcec54198.wav",
@@ -56,11 +56,11 @@
     "static/media/slick.ttf": "/react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
-    "main.f0f44e0f.css.map": "/react-portfolio/static/css/main.f0f44e0f.css.map",
+    "main.7a7fc890.css.map": "/react-portfolio/static/css/main.7a7fc890.css.map",
     "main.a53de32b.js.map": "/react-portfolio/static/js/main.a53de32b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0f44e0f.css",
+    "static/css/main.7a7fc890.css",
     "static/js/main.a53de32b.js"
   ]
 }
