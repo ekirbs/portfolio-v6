@@ -14,9 +14,9 @@ export default function Main() {
             for everyone. Each project offers a unique experience and insight
             into different aspects of web development. Use the navbar to check them out!
           </p>
-          <p className="main-text-temp">
+          {/* <p className="main-text-temp">
             (These projects were designed to be viewed on a <span className="bold">desktop</span> monitor.  I am reworking their design to be responsive and mobile-friendly in my spare time.)            
-          </p>
+          </p> */}
         </div>
       </div>
     </>
