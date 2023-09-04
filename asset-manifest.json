@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d199b9bb.css",
-    "main.js": "/react-portfolio/static/js/main.ff4e5a96.js",
+    "main.css": "/react-portfolio/static/css/main.95f26f2e.css",
+    "main.js": "/react-portfolio/static/js/main.9f250b53.js",
     "static/media/profile-photo.jpg": "/react-portfolio/static/media/profile-photo.ca50f76884202c140179.jpg",
     "static/media/puddle-stores.gif": "/react-portfolio/static/media/puddle-stores.0d549535d1dec4b807e9.gif",
     "static/media/rain.gif": "/react-portfolio/static/media/rain.a175254765a055af47b5.gif",
@@ -56,11 +56,11 @@
     "static/media/slick.ttf": "/react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
-    "main.d199b9bb.css.map": "/react-portfolio/static/css/main.d199b9bb.css.map",
-    "main.ff4e5a96.js.map": "/react-portfolio/static/js/main.ff4e5a96.js.map"
+    "main.95f26f2e.css.map": "/react-portfolio/static/css/main.95f26f2e.css.map",
+    "main.9f250b53.js.map": "/react-portfolio/static/js/main.9f250b53.js.map"
   },
   "entrypoints": [
-    "static/css/main.d199b9bb.css",
-    "static/js/main.ff4e5a96.js"
+    "static/css/main.95f26f2e.css",
+    "static/js/main.9f250b53.js"
   ]
 }
