@@ -21,7 +21,8 @@
   min-height: 25vh;
   align-items: center;
   justify-content: center;
-  width: 75vw;
+  width: 80vw;
+  flex-wrap: wrap;
 }
 
 .key {
