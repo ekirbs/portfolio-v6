@@ -87,6 +87,7 @@
 
 .netflix-tabs .netflix-container > div {
   padding: 1.5rem 0;
+  font-size: 2.5rem;
 }
 
 .netflix-tabs .netflix-container > div:hover {
@@ -298,6 +299,11 @@
 
   .netflix-showcase-content p {
     font-size: 1.5rem;
+  }
+
+  .netflix-tabs .netflix-container {
+    justify-content: space-between;
+    max-width: 90%;
   }
 
   .netflix-footer .netflix-footer-cols {
