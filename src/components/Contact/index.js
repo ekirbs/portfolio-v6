@@ -6,7 +6,7 @@ import { validateEmail } from "../../utils/helpers";
 import { AiFillMail, AiFillPhone, AiFillSound } from "react-icons/ai";
 import "./contact.css";
 import "./contactButton.scss";
-import HereWeGo from "./HereWeGo.mp3";
+import HereWeGo from "./sounds/HereWeGo.mp3";
 
 export default function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -24,7 +24,7 @@ export default function Contact() {
     }
   }, [submitted]);
 
-  const SendButton = ({ onClick }) => (
+  const SendButton = () => (
     <button
       type="button"
       className="slideButton contact-button"

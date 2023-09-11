@@ -4,23 +4,23 @@ import { Button } from "react-bootstrap";
 import "./map.css";
 
 const containerStyle = {
-  width: '40vh',
-  height: '50vh'
+  width: "40vh",
+  height: "50vh",
 };
 
 const center = {
   lat: 40.89744,
-  lng: -74.70528
+  lng: -74.70528,
 };
 
 const options = {
   disableDefaultUI: true,
-  zoomControl: true
+  zoomControl: true,
 };
 
 export default function Map() {
   const [map, setMap] = useState(null);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const onMapLoad = (map) => {
     setMap(map);
@@ -33,7 +33,9 @@ export default function Map() {
       if (status === window.google.maps.GeocoderStatus.OK) {
         map.setCenter(results[0].geometry.location);
       } else {
-        console.log("Geocode was not successful for the following reason: " + status);
+        console.log(
+          "Geocode was not successful for the following reason: " + status
+        );
       }
     });
   };
@@ -52,11 +54,16 @@ export default function Map() {
             <Marker position={center} />
           </GoogleMap>
           <form onSubmit={onSearchSubmit} className="mapForm">
-            <input type="text" className="mapInput" value={search} onChange={(event) => setSearch(event.target.value)} />
+            <input
+              type="text"
+              className="mapInput"
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+            />
             <Button type="submit">Search</Button>
           </form>
         </LoadScript>
       </div>
     </>
   );
-};
+}

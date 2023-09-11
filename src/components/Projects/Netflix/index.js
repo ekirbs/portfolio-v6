@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classnames from "classnames";
 import {
   FaDoorOpen,
@@ -20,6 +20,18 @@ import "./netflix.css";
 
 export default function Netflix() {
   const [activeTab, setActiveTab] = useState("netflix-tab-1");
+
+  const [nextMonthDate, setNextMonthDate] = useState("");
+
+  useEffect(() => {
+    const today = new Date();
+    today.setMonth(today.getMonth() + 1);
+
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const formattedDate = today.toLocaleDateString("en-US", options);
+
+    setNextMonthDate(formattedDate);
+  }, []);
 
   const tabItems = [
     {
@@ -180,8 +192,7 @@ export default function Netflix() {
               <tbody>
                 <tr>
                   <td>
-                    Monthly price after free month ends on
-                    {/* month from today's date */}
+                    Monthly price after free month ends on {nextMonthDate}
                   </td>
                   <td>$8.99</td>
                   <td>$12.99</td>

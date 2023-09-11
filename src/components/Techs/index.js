@@ -1,11 +1,5 @@
 import { useState, useEffect } from "react";
-import { 
-  FaHtml5,
-  FaReact,
-  FaNodeJs,
-  FaSass,
-  FaVuejs
-} from "react-icons/fa";
+import { FaHtml5, FaReact, FaNodeJs, FaSass, FaVuejs } from "react-icons/fa";
 import {
   DiCss3,
   DiJavascript1,
@@ -30,35 +24,137 @@ import {
 import "./techs.css";
 
 export default function Techs() {
-
   const techLogos = [
-    { icon: <DiJavascript1 />, class: "js-logo", color: "var(--js)", title: "JavaScript" },
-    { icon: <FaReact />, class: "react-logo", color: "var(--react)", title: "React.js" },
-    { icon: <FaVuejs />, class: "vue-logo", color: "var(--vue)", title: "Vue.js" },
-    { icon: <SiHandlebarsdotjs />, class: "handlebars-logo", color: "var(--handlebars)", title: "Handlebars.js" },
-    { icon: <FaNodeJs />, class: "node-logo", color: "var(--node)", title: "Node.js" },
+    {
+      icon: <DiJavascript1 />,
+      class: "js-logo",
+      color: "var(--js)",
+      title: "JavaScript",
+    },
+    {
+      icon: <FaReact />,
+      class: "react-logo",
+      color: "var(--react)",
+      title: "React.js",
+    },
+    {
+      icon: <FaVuejs />,
+      class: "vue-logo",
+      color: "var(--vue)",
+      title: "Vue.js",
+    },
+    {
+      icon: <SiHandlebarsdotjs />,
+      class: "handlebars-logo",
+      color: "var(--handlebars)",
+      title: "Handlebars.js",
+    },
+    {
+      icon: <FaNodeJs />,
+      class: "node-logo",
+      color: "var(--node)",
+      title: "Node.js",
+    },
 
-    
-    { icon: <FaHtml5 />, class: "html-logo", color: "var(--html)", title: "HTML5" },
-    { icon: <SiJquery />, class: "jquery-logo", color: "var(--jquery)", title: "jQuery" },
+    {
+      icon: <FaHtml5 />,
+      class: "html-logo",
+      color: "var(--html)",
+      title: "HTML5",
+    },
+    {
+      icon: <SiJquery />,
+      class: "jquery-logo",
+      color: "var(--jquery)",
+      title: "jQuery",
+    },
     { icon: <DiCss3 />, class: "css-logo", color: "var(--css)", title: "CSS3" },
-    { icon: <FaSass />, class: "sass-logo", color: "var(--sass)", title: "SASS" },
-    { icon: <DiBootstrap />, class: "bootstrap-logo", color: "var(--bootstrap)", title: "Bootstrap" },
-    { icon: <SiBulma />, class: "bulma-logo", color: "var(--bulma)", title: "Bulma" },
-    
-    { icon: <DiMysql />, class: "mysql-logo", color: "var(--mysql)", title: "MySQL" },
-    { icon: <SiSequelize />, class: "sequelize-logo", color: "var(--sequelize)", title: "Sequelize" },
-    { icon: <DiMongodb />, class: "mongo-logo", color: "var(--mongo)", title: "MongoDB" },
-    { icon: <SiHeroku />, class: "heroku-logo", color: "var(--heroku)", title: "Heroku" },
-    { icon: <SiFirebase />, class: "firebase-logo", color: "var(--firebase)", title: "Firebase" },
+    {
+      icon: <FaSass />,
+      class: "sass-logo",
+      color: "var(--sass)",
+      title: "SASS",
+    },
+    {
+      icon: <DiBootstrap />,
+      class: "bootstrap-logo",
+      color: "var(--bootstrap)",
+      title: "Bootstrap",
+    },
+    {
+      icon: <SiBulma />,
+      class: "bulma-logo",
+      color: "var(--bulma)",
+      title: "Bulma",
+    },
 
-    
-    { icon: <SiExpress />, class: "express-logo", color: "var(--express)", title: "Express.js" },
-    { icon: <SiAxios />, class: "axios-logo", color: "var(--axios)", title: "Axios" },
-    { icon: <SiApollographql />, class: "apollo-logo", color: "var(--apollo)", title: "Apollo Server" },
-    { icon: <SiInsomnia />, class: "insomnia-logo", color: "var(--insomnia)", title: "Insomnia" },
-    { icon: <SiGraphql />, class: "graphql-logo", color: "var(--graphql)", title: "GraphQL" },
-    { icon: <SiGithub />, class: "github-logo", color: "var(--github)", title: "GitHub" },
+    {
+      icon: <DiMysql />,
+      class: "mysql-logo",
+      color: "var(--mysql)",
+      title: "MySQL",
+    },
+    {
+      icon: <SiSequelize />,
+      class: "sequelize-logo",
+      color: "var(--sequelize)",
+      title: "Sequelize",
+    },
+    {
+      icon: <DiMongodb />,
+      class: "mongo-logo",
+      color: "var(--mongo)",
+      title: "MongoDB",
+    },
+    {
+      icon: <SiHeroku />,
+      class: "heroku-logo",
+      color: "var(--heroku)",
+      title: "Heroku",
+    },
+    {
+      icon: <SiFirebase />,
+      class: "firebase-logo",
+      color: "var(--firebase)",
+      title: "Firebase",
+    },
+
+    {
+      icon: <SiExpress />,
+      class: "express-logo",
+      color: "var(--express)",
+      title: "Express.js",
+    },
+    {
+      icon: <SiAxios />,
+      class: "axios-logo",
+      color: "var(--axios)",
+      title: "Axios",
+    },
+    {
+      icon: <SiApollographql />,
+      class: "apollo-logo",
+      color: "var(--apollo)",
+      title: "Apollo Server",
+    },
+    {
+      icon: <SiInsomnia />,
+      class: "insomnia-logo",
+      color: "var(--insomnia)",
+      title: "Insomnia",
+    },
+    {
+      icon: <SiGraphql />,
+      class: "graphql-logo",
+      color: "var(--graphql)",
+      title: "GraphQL",
+    },
+    {
+      icon: <SiGithub />,
+      class: "github-logo",
+      color: "var(--github)",
+      title: "GitHub",
+    },
   ];
 
   const [logoIndex, setLogoIndex] = useState(0);

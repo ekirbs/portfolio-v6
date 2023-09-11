@@ -91,9 +91,7 @@
 }
 
 .contact-button {
-  transition: transform .2s;
-  /* box-shadow: 1px 1px 2px var(--black);
-  margin: 1vh; */
+  transition: transform 0.2s;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
@@ -112,6 +110,8 @@
   margin-left: 10px;
 }
 
+/* | @MEDIA QUERIES | */
+
 @media screen and (max-width: 1100px) {
   .contact-row {
     flex-direction: column;
@@ -123,8 +123,6 @@
   }
 }
 
-
-/* | @MEDIA QUERIES | */
 @media screen and (max-width: 500px) {
   .contact-container {
     width: 90vw;

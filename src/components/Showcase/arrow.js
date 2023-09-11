@@ -9,7 +9,6 @@ export default function ArrowButton({ onClick, direction }) {
       aria-label={direction === "prev" ? "Previous slide" : "Next slide"}
     >
       {direction === "prev" ? <SlArrowLeft /> : <SlArrowRight />}
-      {/* {direction === "prev" ? "<" : ">"} */}
     </button>
   );
-};
+}

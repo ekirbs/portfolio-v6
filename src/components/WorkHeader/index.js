@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import "./workHeader.css"
+import { useState, useEffect } from "react";
+import "./workHeader.css";
 
 export default function WorkHeader() {
   const [showText, setShowText] = useState(false);
@@ -12,7 +12,12 @@ export default function WorkHeader() {
 
   return (
     <header id="work" className="work-header">
-      <h1 className="work-header-text" style={{ opacity: showText ? 1 : 0, transition: "opacity 7s" }}>My Work</h1>
+      <h1
+        className="work-header-text"
+        style={{ opacity: showText ? 1 : 0, transition: "opacity 7s" }}
+      >
+        My Work
+      </h1>
     </header>
   );
 }

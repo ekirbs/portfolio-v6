@@ -1,5 +1,9 @@
 import React from "react";
-import { AiOutlineClockCircle, AiOutlineHome, AiOutlineVideoCamera } from "react-icons/ai";
+import {
+  AiOutlineClockCircle,
+  AiOutlineHome,
+  AiOutlineVideoCamera,
+} from "react-icons/ai";
 import { FaDrum } from "react-icons/fa";
 import { GiSettingsKnobs, GiMusicSpell } from "react-icons/gi";
 import { SiNetflix } from "react-icons/si";
@@ -10,11 +14,26 @@ import "./projectsNavbar.css";
 const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
   const projects = [
     { id: "Main", name: "Main", icon: AiOutlineHome, color: "ghostWhite" },
-    { id: "Camera", name: "Camera", icon: AiOutlineVideoCamera, color: "highlight" },
-    { id: "Clock", name: "Clock", icon: AiOutlineClockCircle, color: "seaBlue" },
+    {
+      id: "Camera",
+      name: "Camera",
+      icon: AiOutlineVideoCamera,
+      color: "highlight",
+    },
+    {
+      id: "Clock",
+      name: "Clock",
+      icon: AiOutlineClockCircle,
+      color: "seaBlue",
+    },
     { id: "Drumkit", name: "Drumkit", icon: FaDrum, color: "mongo" },
     { id: "Netflix", name: "Netflix", icon: SiNetflix, color: "netflixRed" },
-    { id: "Variables", name: "Variables", icon: GiSettingsKnobs, color: "base" },
+    {
+      id: "Variables",
+      name: "Variables",
+      icon: GiSettingsKnobs,
+      color: "base",
+    },
     // { id: "Weather", name: "Weather", icon: TiWeatherDownpour, color: "github" },
   ];
 
@@ -26,18 +45,13 @@ const ProjectsNavbar = ({ currentPage, handlePageChange }) => {
             key={project.id}
             className={currentPage === project.id ? "active" : ""}
           >
-            <div onClick={() => handlePageChange(project.id)}
+            <div
+              onClick={() => handlePageChange(project.id)}
               className="icon-container"
-              style={
-                project.color
-                ? {color: `var(--${project.color})`}
-                : {}
-              }
+              style={project.color ? { color: `var(--${project.color})` } : {}}
             >
               {project.icon && <project.icon className="p-nav-icon" />}
-              <div className="project-name">
-                {project.name}
-              </div>
+              <div className="project-name">{project.name}</div>
             </div>
           </li>
         ))}

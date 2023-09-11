@@ -1,4 +1,5 @@
 /* | MAP STYLE | */
+
 .map-card {
   margin: 5vw 10vw;
   background: var(--white);
@@ -25,14 +26,15 @@
 }
 
 /* | @MEDIA QUERIES | */
+
 @media screen and (max-width: 800px) {
-  .map-card{
+  .map-card {
     width: 75vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .map-card{
+  .map-card {
     width: 90%;
     margin: 2.5vw;
   }

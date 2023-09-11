@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid var(--black); */
 }
 
 .showcase-slider div {
@@ -23,7 +22,7 @@
 }
 
 .showcase-inner-card {
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -134,20 +133,6 @@
   padding: 1px;
   font-weight: bold;
   font-size: 3vh;
-}
-
-.showcase-upper-row {
-  height: 85% !important;
-  width: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2vh;
-}
-
-.showcase-desc {
-  margin-top: 2vh;
 }
 
 .tech-icon {
@@ -304,16 +289,11 @@
     flex-direction: column;
   }
 
-  .showcase-desc {
-    display: none;
-  }
-
   .showcase-list-title {
     display: none;
   }
 
   .showcase-list {
-    margin: 5vh 0 0 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row !important;
@@ -334,11 +314,35 @@
   .showcase-row {
     flex-direction: column;
   }
+
+  .tech-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .showcase-buttons {
+    flex-direction: column;
+  }
+
+  .showcase-buttons a {
+    width: 45vw;
+    margin: 1vh;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .showcase-slider {
     max-height: 150vh;
+  }
+
+  .showcase-title {
+    font-size: 200%;
+    margin-bottom: 1vh;
+  }
+
+  .showcase-description {
+    font-size: 100%;
   }
 
   .showcase-upper-row {

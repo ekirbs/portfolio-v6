@@ -18,7 +18,8 @@ export default function About() {
     },
     {
       title: "Let's Connect",
-      content: "I love software development and talking about all things coding. Let's connect and create something remarkable together.",
+      content:
+        "I love software development and talking about all things coding. Let's connect and create something remarkable together.",
     },
   ];
 

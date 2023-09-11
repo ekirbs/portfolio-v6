@@ -115,16 +115,10 @@
 .netflix-tab-content-item {
   display: none;
 }
-/* #tab-1-content,
-#tab-2-content,
-#tab-3-content {
-  display: none;
-} */
 
 .netflix-show {
   display: block !important;
 }
-
 
 #netflix-tab-1-content .netflix-tab-1-content-inner {
   display: grid;

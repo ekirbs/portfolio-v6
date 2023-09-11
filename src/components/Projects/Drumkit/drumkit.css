@@ -77,6 +77,8 @@ kbd {
   pointer-events: none;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1100px) {
   .drumkit {
     width: 100vw;

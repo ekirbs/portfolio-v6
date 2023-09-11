@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   background-color: var(--secondary);
-  /* border-right: 5px solid var(--black); */
 }
 
 .projects-list {
@@ -15,7 +14,8 @@
   background-color: var(--primary);
   border: 2px solid var(--black);
   border-radius: 10px;
-margin: 1vh;}
+  margin: 1vh;
+}
 
 .icon-container {
   display: flex;
@@ -41,7 +41,7 @@ li.active .icon-container {
 }
 
 li.active .icon-container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% - 2vh);
   height: calc(150% - 2vh);

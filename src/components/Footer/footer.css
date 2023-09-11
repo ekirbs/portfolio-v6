@@ -14,7 +14,8 @@
   -o-background-size: cover;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;}
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .footer a {
   margin: 0;
@@ -43,6 +44,7 @@
 }
 
 /* | @MEDIA QUERIES | */
+
 @media screen and (max-width: 500px) {
   .footerText {
     display: none;

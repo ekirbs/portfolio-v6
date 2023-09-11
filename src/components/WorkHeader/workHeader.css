@@ -28,7 +28,7 @@
     var(--black) 50%,
     var(--black) 80%,
     transparent 100%
-    );
+  );
   border-radius: 2vh;
   border: 2px solid var(--white);
 }

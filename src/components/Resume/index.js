@@ -1,15 +1,6 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import {
-  ResumeImg,
-  ResumeDownload,
-  ccmLogo,
-  rutgersLogo,
-  bootcampLogo,
-  kcfLogo,
-  lewLogo,
-  cmsLogo,
-} from "../../assets/images";
+import { Col } from "react-bootstrap";
+import { ResumeImg, ResumeDownload } from "../../assets/images";
 import "./resume.css";
 
 export default function Resume() {
@@ -28,7 +19,6 @@ export default function Resume() {
             </a>
           </Col>
         </div>
-        <Col></Col>
       </div>
     </>
   );

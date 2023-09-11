@@ -2,13 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import "./clock.css";
 
 export default function Clock() {
-
-  const [currentTime, setCurrentTime] = useState('');
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
       const date = new Date();
-      const formattedTime = date.toLocaleTimeString('en-US');
+      const formattedTime = date.toLocaleTimeString("en-US");
       setCurrentTime(formattedTime);
     }, 1000);
 
@@ -54,7 +53,7 @@ export default function Clock() {
       <h1 className="clock-time">Current Time: {currentTime}</h1>
       <div id="clock" className="clock">
         <div className="clock-face">
-        <div className="clock-circle"></div>
+          <div className="clock-circle"></div>
           <div className="number number1">1</div>
           <div className="number number2">2</div>
           <div className="number number3">3</div>

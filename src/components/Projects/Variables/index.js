@@ -8,11 +8,16 @@ export default function Variables() {
     function handleUpdate() {
       const suffix = this.dataset.sizing || "";
 
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      document.documentElement.style.setProperty(
+        `--${this.name}`,
+        this.value + suffix
+      );
     }
 
     inputs.forEach((input) => input.addEventListener("change", handleUpdate));
-    inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate));
+    inputs.forEach((input) =>
+      input.addEventListener("mousemove", handleUpdate)
+    );
 
     // Clean up event listeners when the component is unmounted
     return () => {
@@ -27,9 +32,13 @@ export default function Variables() {
 
   return (
     <div id="variable-style" className="variable-style">
-      <h2 className="variable-header">Update CSS Variables with <span className="hl">JS</span></h2>{" "}
+      <h2 className="variable-header">
+        Update CSS Variables with <span className="js-hl">JS</span>
+      </h2>{" "}
       <div className="controls controls-top">
-        <label htmlFor="spacing" className="var-label">Spacing:</label>
+        <label htmlFor="spacing" className="var-label">
+          Spacing:
+        </label>
 
         <input
           id="spacing"
@@ -42,7 +51,9 @@ export default function Variables() {
           className="var-input"
         ></input>
 
-        <label htmlFor="blur" className="var-label">Blur:</label>
+        <label htmlFor="blur" className="var-label">
+          Blur:
+        </label>
         <input
           id="blur"
           type="range"
@@ -54,7 +65,9 @@ export default function Variables() {
           className="var-input"
         ></input>
 
-        <label htmlFor="base" className="var-label">Base Color:</label>
+        <label htmlFor="base" className="var-label">
+          Base Color:
+        </label>
         <input
           id="base"
           type="color"
@@ -63,15 +76,15 @@ export default function Variables() {
           className="var-input"
         ></input>
       </div>
-
       <img
         src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
         className="var-img"
         alt="Variable Styles"
       ></img>
-
       <div className="controls controls-bottom">
-        <label htmlFor="contrast" className="var-label">Contrast:</label>
+        <label htmlFor="contrast" className="var-label">
+          Contrast:
+        </label>
 
         <input
           id="contrast"
@@ -84,7 +97,9 @@ export default function Variables() {
           className="var-input"
         ></input>
 
-        <label htmlFor="hue-rotate" className="var-label">Hue:</label>
+        <label htmlFor="hue-rotate" className="var-label">
+          Hue:
+        </label>
         <input
           id="hue-rotate"
           type="range"
@@ -96,7 +111,9 @@ export default function Variables() {
           className="var-input"
         ></input>
 
-        <label htmlFor="opacity" className="var-label">Opacity:</label>
+        <label htmlFor="opacity" className="var-label">
+          Opacity:
+        </label>
         <input
           id="opacity"
           type="range"
@@ -108,7 +125,6 @@ export default function Variables() {
           className="var-input"
         ></input>
       </div>
-
     </div>
   );
 }
