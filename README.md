@@ -1,17 +1,23 @@
 ![](./public/assets/images/readme-header-image.png)
 
 ---
+
 ## Description
 
-Hello, and welcome to my portfolio!  My name is Eric Kirberger and I am a Full Stack Web Developer.  My focus is on Front End Development and UI/UX Design.  This mobile-first, responsive portfolio is made using React.js with a growing number of components and features, a list of which can be found below.  Please enjoy your time on my site, and feel free to contact me for anything field-related!
+Welcome to my portfolio! I'm Eric Kirberger, a dedicated Full Stack Web Developer with a passion passion for growth and mastery across various programming languages and technologies. My expertise primarily revolves around Front End Development and Design.
 
-Link: [ Deployed Portfolio](https://ekirbs.github.io/react-portfolio/ 'The portfolio of Eric Kirberger.  Made with React.js.')
+This mobile-first, responsive portfolio is a testament to my commitment to creating well-crafted, engaging, and responsive applications. It's built with React.js and features an ever-expanding array of components and functionalities, all designed to deliver exceptional user experiences.
 
-Link: [GitHub Repository](https://github.com/ekirbs/react-portfolio/ 'The GitHub repository of my portfolio.')
+As you explore this portfolio, I invite you to witness my journey of continuous improvement and innovation. Should you have any inquiries or if you'd like to collaborate on projects aligned withour shared passion for excellence in web development, please don't hesitate to reach out.  Thank you for visiting, and I hope you find inspiration in the work showcased here.
+
+Link: [ Deployed Portfolio](https://ekirbs.github.io/react-portfolio/ "The portfolio of Eric Kirberger.  Made with React.js.")
+
+Link: [GitHub Repository](https://github.com/ekirbs/react-portfolio/ "The GitHub repository of my portfolio.")
 
 <br>
 
 ---
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -23,21 +29,23 @@ Link: [GitHub Repository](https://github.com/ekirbs/react-portfolio/ 'The GitHub
 <br>
 
 ---
+
 ## Installation
 
-N/A.  This portfolio requires no installation. Just enjoy!
+N/A. This portfolio requires no installation. Just enjoy!
 
 <br>
 
 ---
+
 ## Usage
 
-The navigation bar can always be found in the top right corner of the screen.  Just click on the menu button and a dropdown list provides links to different sections:
+The navigation bar can always be found in the top right corner of the screen. Just click on the menu button and a dropdown list provides links to different sections:
 
-  - **Home** - back to the top we go!
-  - **My Work** - a showcase of my skills and a display of the various technologies I've used so far.
-  - **About Me** - learn an little about me, where I've learned my skills, and what I've done in the past with a downloadable pdf of my resume.
-  - **Contact** - information on how where and how to find me, and a footer with some additional personal links like Instagram, LinkedIn, and GitHub.
+- **Home** - Back to the top we go!
+- **My Work** - A showcase of my skills and a display of the various technologies I've used so far.
+- **About Me** - Learn an little about me, where I've learned my skills, and what I've done in the past with a downloadable pdf of my resume.
+- **Contact Me** - Information on how where and how to find me, and a footer with some additional personal links like Instagram, LinkedIn, and GitHub.
 
 <br>
 
@@ -54,29 +62,31 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 <br>
 
 ---
+
 ## Credits
 
 <br>
 
 A special thanks to the developers of the packages I've utilized on this site through Node Package Manager(**npm**):
 
-Link: [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified 'The Youtube channel for Web Dev Simplified.')
+Link: [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified "The Youtube channel for Web Dev Simplified.")
 
 <br>
 
 ---
+
 ## License
 
 <br>
 
 ![React.js](https://img.shields.io/badge/license-MIT-brightgreen)
 
-
-This application has an MIT license.  This is a short and simple permissive license with conditions only requiring preservation of copyright and license notices.  For more information please refer to the license located in the github repository.
+This application has an MIT license. This is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. For more information please refer to the license located in the github repository.
 
 <br>
 
 ---
+
 ## Badges
 
 <br>
@@ -86,6 +96,7 @@ This application has an MIT license.  This is a short and simple permissive lice
 <br>
 
 ---
+
 ## Features
 
 - My Work - some of the projects I've built, displayed in a component I built
@@ -96,4 +107,4 @@ This application has an MIT license.  This is a short and simple permissive lice
 - My Resume - a summary of professional resume with an option to download my full resume in a pdf
 - Contact Me - my business contact information
   - the Google Maps is right now just generally centered on my region in the world
-  - the contact form should work, if you so choose.  It will send me an email.
+  - the contact form should work, if you so choose. It will send me an email.

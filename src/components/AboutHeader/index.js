@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import "./aboutHeader.css"
+import { useState, useEffect } from "react";
+import "./aboutHeader.css";
 
 export default function AboutHeader() {
   const [showText, setShowText] = useState(false);
@@ -12,7 +12,12 @@ export default function AboutHeader() {
 
   return (
     <header id="about" className="about-header">
-      <h1 className="about-header-name" style={{ opacity: showText ? 1 : 0, transition: "opacity 7s" }}>About Me</h1>
+      <h1
+        className="about-header-name"
+        style={{ opacity: showText ? 1 : 0, transition: "opacity 7s" }}
+      >
+        About Me
+      </h1>
     </header>
   );
 }

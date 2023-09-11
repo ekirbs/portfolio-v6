@@ -1,5 +1,4 @@
 .about-header {
-  /* background-image: url(../../assets/images/puddle-stores.gif); */
   background-image: url(../../assets/images/puddle-stores.gif);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,8 +40,8 @@
   justify-content: center;
 }
 
-
 /* | @MEDIA QUERIES | */
+
 @media screen and (min-width: 820px) {
   .about-header {
     background-repeat: no-repeat;
