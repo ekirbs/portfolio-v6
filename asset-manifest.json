@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.ddfaea4f.css",
+    "main.css": "/react-portfolio/static/css/main.ffb58d6b.css",
     "main.js": "/react-portfolio/static/js/main.302d7e2c.js",
     "static/media/profile-photo.jpg": "/react-portfolio/static/media/profile-photo.ca50f76884202c140179.jpg",
     "static/media/puddle-stores.gif": "/react-portfolio/static/media/puddle-stores.0d549535d1dec4b807e9.gif",
@@ -56,11 +56,11 @@
     "static/media/slick.ttf": "/react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
-    "main.ddfaea4f.css.map": "/react-portfolio/static/css/main.ddfaea4f.css.map",
+    "main.ffb58d6b.css.map": "/react-portfolio/static/css/main.ffb58d6b.css.map",
     "main.302d7e2c.js.map": "/react-portfolio/static/js/main.302d7e2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddfaea4f.css",
+    "static/css/main.ffb58d6b.css",
     "static/js/main.302d7e2c.js"
   ]
 }
