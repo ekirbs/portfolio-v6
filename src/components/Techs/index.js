@@ -1,5 +1,20 @@
 import { useState, useEffect } from "react";
-import { FaHtml5, FaReact, FaNodeJs, FaSass, FaVuejs } from "react-icons/fa";
+import {
+  FaAws,
+  FaDocker,
+  FaJenkins,
+  FaHtml5,
+  FaJava,
+  FaAngular,
+  FaReact,
+  FaNodeJs,
+  FaSass,
+  FaVuejs,
+  FaLinux,
+  FaGitlab,
+  FaJira,
+  FaConfluence,
+} from "react-icons/fa";
 import {
   DiCss3,
   DiJavascript1,
@@ -17,19 +32,45 @@ import {
   SiAxios,
   SiExpress,
   SiInsomnia,
+  SiSonarqube,
   SiHeroku,
   SiFirebase,
   SiGithub,
+  SiSpring,
+  SiMui,
+  SiPostgresql,
+  SiTypescript,
+  SiApachemaven,
+  SiMongoose,
+  SiSwagger,
 } from "react-icons/si";
 import "./techs.css";
 
 export default function Techs() {
   const techLogos = [
     {
+      icon: <FaJava />,
+      class: "java-logo",
+      color: "var(--java)",
+      title: "Java",
+    },
+    {
       icon: <DiJavascript1 />,
       class: "js-logo",
       color: "var(--js)",
       title: "JavaScript",
+    },
+    {
+      icon: <SiTypescript />,
+      class: "ts-logo",
+      color: "var(--ts)",
+      title: "TypeScript",
+    },
+    {
+      icon: <FaAngular />,
+      class: "angular-logo",
+      color: "var(--angular)",
+      title: "Angular",
     },
     {
       icon: <FaReact />,
@@ -55,7 +96,12 @@ export default function Techs() {
       color: "var(--node)",
       title: "Node.js",
     },
-
+    {
+      icon: <SiApachemaven />,
+      class: "maven-logo",
+      color: "var(--maven)",
+      title: "Apache Maven",
+    },
     {
       icon: <FaHtml5 />,
       class: "html-logo",
@@ -68,7 +114,12 @@ export default function Techs() {
       color: "var(--jquery)",
       title: "jQuery",
     },
-    { icon: <DiCss3 />, class: "css-logo", color: "var(--css)", title: "CSS3" },
+    {
+      icon: <DiCss3 />,
+      class: "css-logo",
+      color: "var(--css)",
+      title: "CSS3"
+    },
     {
       icon: <FaSass />,
       class: "sass-logo",
@@ -101,10 +152,46 @@ export default function Techs() {
       title: "Sequelize",
     },
     {
+      icon: <SiPostgresql />,
+      class: "postgresql-logo",
+      color: "var(--postgresql)",
+      title: "PostgreSQL",
+    },
+    {
       icon: <DiMongodb />,
       class: "mongo-logo",
       color: "var(--mongo)",
       title: "MongoDB",
+    },
+    {
+      icon: <SiMongoose />,
+      class: "mongoose-logo",
+      color: "var(--mongoose)",
+      title: "Mongoose",
+    },
+    {
+      icon: <FaAws />,
+      class: "aws-logo",
+      color: "var(--aws)",
+      title: "AWS",
+    },
+    {
+      icon: <FaDocker />,
+      class: "docker-logo",
+      color: "var(--docker)",
+      title: "Docker",
+    },
+    {
+      icon: <FaJenkins />,
+      class: "jenkins-logo",
+      color: "var(--jenkins)",
+      title: "Jenkins",
+    },
+    {
+      icon: <SiSonarqube />,
+      class: "sonarqube-logo",
+      color: "var(--sonarqube)",
+      title: "SonarQube",
     },
     {
       icon: <SiHeroku />,
@@ -154,6 +241,48 @@ export default function Techs() {
       class: "github-logo",
       color: "var(--github)",
       title: "GitHub",
+    },
+    {
+      icon: <FaGitlab />,
+      class: "gitlab-logo",
+      color: "var(--gitlab)",
+      title: "GitLab",
+    },
+    {
+      icon: <SiSpring />,
+      class: "spring-logo",
+      color: "var(--spring)",
+      title: "Spring",
+    },
+    {
+      icon: <SiMui />,
+      class: "mui-logo",
+      color: "var(--mui)",
+      title: "MUI",
+    },
+    {
+      icon: <SiSwagger />,
+      class: "swagger-logo",
+      color: "var(--swagger)",
+      title: "Swagger",
+    },
+    {
+      icon: <FaLinux />,
+      class: "linux-logo",
+      color: "var(--linux)",
+      title: "Linux",
+    },
+    {
+      icon: <FaJira />,
+      class: "jira-logo",
+      color: "var(--jira)",
+      title: "Jira",
+    },
+    {
+      icon: <FaConfluence />,
+      class: "confluence-logo",
+      color: "var(--confluence)",
+      title: "Confluence",
     },
   ];
 

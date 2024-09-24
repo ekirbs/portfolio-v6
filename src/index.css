@@ -19,11 +19,15 @@
   --turq: #69dcf3;
 
   /* brand colors */
+  --java: #ED8B00;
   --js: #f7df1e;
+  --ts: #3178C6;
+  --angular: #DD0031;
   --react: #00d8ff;
   --vue: #42b883;
   --handlebars: #ff7b00;
   --node: #6cc24a;
+  --maven: #C71A36;
   --html: #e34f26;
   --jquery: #0769ad;
   --css: #0074d9;
@@ -32,7 +36,13 @@
   --bulma: #00d1b2;
   --mysql: #00758f;
   --sequelize: #00a5db;
+  --postgresql: #336791;
   --mongo: #589636;
+  --mongoose: #880000;
+  --aws: #FF9900;
+  --docker: #0db7ed;
+  --jenkins: #d3383c;
+  --sonarqube: #4F5D73;
   --heroku: #6762a6;
   --firebase: #ffca28;
   --express: #ffffff;
@@ -41,6 +51,13 @@
   --insomnia: #0b163d;
   --graphql: #e10098;
   --github: #6f42c1;
+  --gitlab: #FC6D26;
+  --spring: #6DB33F;
+  --mui: #007FFF;
+  --swagger: #85B1A4;
+  --linux: #0A84AE;
+  --jira: #0033A0;
+  --confluence: #0033A0;
 
   --json: #ffffff;
   --npm: #cb3837;

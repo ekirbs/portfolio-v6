@@ -77,7 +77,7 @@ export default function Variables() {
         ></input>
       </div>
       <img
-        src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
+        src={require("../../../assets/images/css-variables-background.jpg")}
         className="var-img"
         alt="Variable Styles"
       ></img>

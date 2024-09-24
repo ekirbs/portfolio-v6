@@ -23,6 +23,7 @@ export default class SimpleSlider extends Component {
     return (
       <>
         <div id="showcase" className="showcase-card">
+        <p className="showcase-txt">Welcome! This is my project showcase. You can navigate left or right using the arrows on either side, or just use your mouse to click and drag the slider.  Enjoy!</p>
           <Slider {...settings} className="showcase-slider">
             {Showcase.map(
               (
