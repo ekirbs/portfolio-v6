@@ -7,19 +7,19 @@ export default function About() {
 
   const sections = [
     {
-      title: "Software Development",
+      title: "Technical Expertise",
       content:
-        "Hi there! I'm a dedicated Software Developer and all-around good guy. With a flair for crafting immersive experiences using technologies like React.js and MySQL, I'm on a journey to turn ideas into elegant solutions.",
+        "Hi there! I am a versatile Full Stack Developer with a passion for building efficient, scalable, and user-centric applications. With a strong foundation in technologies like Java, JavaScript, TypeScript, Spring, React, Angular, and cloud services like AWS, I thrive on tackling complex technical challenges. Whether working with SQL/NoSQL databases or experimenting with cutting-edge tools, I constantly seek ways to sharpen my skills and optimize development processes.",
     },
     {
-      title: "Skills & Experience",
+      title: "Professional Journey",
       content:
-        "I am a proud graduate of Rutgers Full Stack Flex Web Development Program. Beyond coding, my diverse background in education and coaching equipes me with invaluable skills in teamwork, communication, conflict resolution, and innovative problem-solving.",
+        "Graduating from Rutgers’ Full Stack Web Development Program provided me with the technical foundation, but my journey extends beyond the classroom. I've had the privilege of working at Smoothstack, where I contributed to various real-world projects, enhancing my expertise in software development and Agile methodologies. My background also includes roles in education and coaching, allowing me to bring unique leadership, communication, and team collaboration skills to the table.",
     },
     {
-      title: "Let's Connect",
+      title: "Who I Am",
       content:
-        "I love software development and talking about all things coding. Let's connect and create something remarkable together.",
+        "Beyond the code, I’m a problem-solver at heart. I approach challenges with creativity and persistence, always aiming to turn ideas into elegant solutions. My diverse experiences shape the way I work—whether it’s thinking outside the box or helping teams find common ground. I’m deeply passionate about continuous learning and open to exploring new technologies and ideas. Let’s connect and create something meaningful together!",
     },
   ];
 

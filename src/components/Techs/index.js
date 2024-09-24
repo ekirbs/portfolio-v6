@@ -294,7 +294,7 @@ export default function Techs() {
     }, 500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [techLogos.length]);
 
   return (
     <>

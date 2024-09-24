@@ -5,7 +5,7 @@
   justify-content: space-around;
   padding: 5vh 5vw 15vh 5vw;
   margin-bottom: -10vh;
-  min-height: 75vh;
+  min-height: 110vh;
 }
 
 .about-photo-card-outter {
@@ -52,6 +52,7 @@
   color: var(--white);
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-size: 1.75rem;
+  text-align: center;
 }
 
 .about-title.active {
@@ -65,12 +66,12 @@
 }
 
 .about-text {
-  padding: 5vh;
+  padding: 2vh 5vh;
   width: 100%;
   color: var(--white);
   display: none;
   transition: opacity 0.5s ease;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .about-text.active {
