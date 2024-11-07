@@ -9,7 +9,7 @@ export { default as puddleStoresGif } from "./puddle-stores.gif";
 export { default as rainGif } from "./rain.gif";
 
 export { default as ResumeImg } from "./resume-img.jpg";
-export { default as ResumeDownload } from "./resume-download.pdf";
+export { default as ResumeDownload } from "./resume-eric-kirberger.pdf";
 
 export { default as ccmLogo } from "./ccm-logo.png";
 export { default as rutgersLogo } from "./rutgers-logo.png";
