@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.44aa237a.css",
-    "main.js": "/react-portfolio/static/js/main.a732fda0.js",
+    "main.css": "/react-portfolio/static/css/main.53155b47.css",
+    "main.js": "/react-portfolio/static/js/main.385b8b17.js",
     "static/media/profile-photo.jpg": "/react-portfolio/static/media/profile-photo.ca50f76884202c140179.jpg",
     "static/media/puddle-stores.gif": "/react-portfolio/static/media/puddle-stores.0d549535d1dec4b807e9.gif",
     "static/media/rain.gif": "/react-portfolio/static/media/rain.a175254765a055af47b5.gif",
@@ -25,7 +25,7 @@
     "static/media/tab-content-2-1.png": "/react-portfolio/static/media/tab-content-2-1.1759b88a3ed38aa66bc7.png",
     "static/media/openhat.wav": "/react-portfolio/static/media/openhat.482e523113fddc21f663.wav",
     "static/media/css-variables-background.jpg": "/react-portfolio/static/media/css-variables-background.898ea49cca4969b2c870.jpg",
-    "static/media/resume-eric-kirberger.pdf": "/react-portfolio/static/media/resume-eric-kirberger.d949395f10fe9d7bc2b3.pdf",
+    "static/media/resume-eric-kirberger.pdf": "/react-portfolio/static/media/resume-eric-kirberger.aa7d9b9c443736584c16.pdf",
     "static/media/tab-content-2-3.png": "/react-portfolio/static/media/tab-content-2-3.55b6f6b4f576e0adec8a.png",
     "static/media/tab-content-1.png": "/react-portfolio/static/media/tab-content-1.725d9bfffebb07c0e4f7.png",
     "static/media/boom.wav": "/react-portfolio/static/media/boom.d89f41a5296c9cc8d21e.wav",
@@ -58,11 +58,11 @@
     "static/media/slick.ttf": "/react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
-    "main.44aa237a.css.map": "/react-portfolio/static/css/main.44aa237a.css.map",
-    "main.a732fda0.js.map": "/react-portfolio/static/js/main.a732fda0.js.map"
+    "main.53155b47.css.map": "/react-portfolio/static/css/main.53155b47.css.map",
+    "main.385b8b17.js.map": "/react-portfolio/static/js/main.385b8b17.js.map"
   },
   "entrypoints": [
-    "static/css/main.44aa237a.css",
-    "static/js/main.a732fda0.js"
+    "static/css/main.53155b47.css",
+    "static/js/main.385b8b17.js"
   ]
 }
